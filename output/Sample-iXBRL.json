@@ -1,0 +1,1469 @@
+{
+  "schema": "https://xbrl.frc.org.uk/FRS-102/2024-01-01/FRS-102-2024-01-01.xsd",
+  "namespaces": {
+    "xmlns": ["http://www.w3.org/1999/xhtml"],
+    "xmlns:FRS-102": ["http://xbrl.frc.org.uk/FRS-102/2024-01-01"],
+    "xmlns:Q1": ["http://xbrl.org/2005/xbrldt"],
+    "xmlns:Q2": ["http://www.xbrl.org/dtr/type/non-numeric"],
+    "xmlns:SI": ["https://www.xbrl.org/utr/conf"],
+    "xmlns:accrep": ["http://xbrl.frc.org.uk/reports/2024-01-01/accrep"],
+    "xmlns:aurep": ["http://xbrl.frc.org.uk/reports/2024-01-01/aurep"],
+    "xmlns:bus": ["http://xbrl.frc.org.uk/cd/2024-01-01/business"],
+    "xmlns:common": ["http://xbrl.frc.org.uk/general/2024-01-01/common"],
+    "xmlns:core": ["http://xbrl.frc.org.uk/fr/2024-01-01/core"],
+    "xmlns:countries": ["http://xbrl.frc.org.uk/cd/2024-01-01/countries"],
+    "xmlns:curr": ["http://xbrl.frc.org.uk/cd/2024-01-01/currencies"],
+    "xmlns:direp": ["http://xbrl.frc.org.uk/reports/2024-01-01/direp"],
+    "xmlns:dtr2022": ["http://www.xbrl.org/dtr/type/2022-03-31"],
+    "xmlns:fn": ["http://www.w3.org/2005/xpath-functions"],
+    "xmlns:gen": ["http://xbrl.org/2008/generic"],
+    "xmlns:iso4217": ["http://www.xbrl.org/2003/iso4217"],
+    "xmlns:ix": ["http://www.xbrl.org/2013/inlineXBRL"],
+    "xmlns:ixt": ["http://www.xbrl.org/inlineXBRL/transformation/2010-04-20"],
+    "xmlns:lang": ["http://xbrl.frc.org.uk/cd/2024-01-01/languages"],
+    "xmlns:link": ["http://www.xbrl.org/2003/linkbase"],
+    "xmlns:nonnum": ["http://www.xbrl.org/dtr/type/non-numeric"],
+    "xmlns:num": ["http://www.xbrl.org/dtr/type/numeric"],
+    "xmlns:ref": ["http://www.xbrl.org/2006/ref"],
+    "xmlns:secr": ["http://xbrl.frc.org.uk/reports/2024-01-01/direp"],
+    "xmlns:types": ["http://xbrl.frc.org.uk/general/2024-01-01/types"],
+    "xmlns:uk-ref": ["http://xbrl.frc.org.uk/general/2024-01-01/ref"],
+    "xmlns:xbrldi": ["http://xbrl.org/2006/xbrldi"],
+    "xmlns:xbrldt": ["http://xbrl.org/2005/xbrldt"],
+    "xmlns:xbrli": ["http://www.xbrl.org/2003/instance"],
+    "xmlns:xl": ["http://www.xbrl.org/2003/XLink"],
+    "xmlns:xlink": ["http://www.w3.org/1999/xlink"],
+    "xmlns:xsd": ["http://www.w3.org/2001/XMLSchema"],
+    "xmlns:xsi": ["http://www.w3.org/2001/XMLSchema-instance"]
+  },
+  "contexts": {
+    "C": { "id": "C", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": null, "startdate": "2023-09-01", "enddate": "2024-08-31" },
+    "B": { "id": "B", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": "2024-08-31", "startdate": null, "enddate": null },
+    "E": { "id": "E", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": "2023-08-31", "startdate": null, "enddate": null },
+    "B_A_BK": {
+      "id": "B_A_BK",
+      "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+      "segments": [{ "tag": "explicitMember", "value": "core:OtherPropertyPlantEquipment", "dimension": "core:PropertyPlantEquipmentClassesDimension" }],
+      "instant": "2024-08-31",
+      "startdate": null,
+      "enddate": null
+    },
+    "E_A_BK": {
+      "id": "E_A_BK",
+      "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+      "segments": [{ "tag": "explicitMember", "value": "core:OtherPropertyPlantEquipment", "dimension": "core:PropertyPlantEquipmentClassesDimension" }],
+      "instant": "2023-08-31",
+      "startdate": null,
+      "enddate": null
+    },
+    "B_J_AS_N_AT": {
+      "id": "B_J_AS_N_AT",
+      "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+      "segments": [
+        { "tag": "explicitMember", "value": "core:CurrentFinancialInstruments", "dimension": "core:FinancialInstrumentCurrentNon-currentDimension" },
+        { "tag": "explicitMember", "value": "core:WithinOneYear", "dimension": "core:MaturitiesOrExpirationPeriodsDimension" }
+      ],
+      "instant": "2024-08-31",
+      "startdate": null,
+      "enddate": null
+    },
+    "E_J_AS_N_AT": {
+      "id": "E_J_AS_N_AT",
+      "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+      "segments": [
+        { "tag": "explicitMember", "value": "core:CurrentFinancialInstruments", "dimension": "core:FinancialInstrumentCurrentNon-currentDimension" },
+        { "tag": "explicitMember", "value": "core:WithinOneYear", "dimension": "core:MaturitiesOrExpirationPeriodsDimension" }
+      ],
+      "instant": "2023-08-31",
+      "startdate": null,
+      "enddate": null
+    },
+    "B_J_AU_N_AV": {
+      "id": "B_J_AU_N_AV",
+      "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+      "segments": [
+        { "tag": "explicitMember", "value": "core:Non-currentFinancialInstruments", "dimension": "core:FinancialInstrumentCurrentNon-currentDimension" },
+        { "tag": "explicitMember", "value": "core:AfterOneYear", "dimension": "core:MaturitiesOrExpirationPeriodsDimension" }
+      ],
+      "instant": "2024-08-31",
+      "startdate": null,
+      "enddate": null
+    },
+    "E_J_AU_N_AV": {
+      "id": "E_J_AU_N_AV",
+      "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+      "segments": [
+        { "tag": "explicitMember", "value": "core:Non-currentFinancialInstruments", "dimension": "core:FinancialInstrumentCurrentNon-currentDimension" },
+        { "tag": "explicitMember", "value": "core:AfterOneYear", "dimension": "core:MaturitiesOrExpirationPeriodsDimension" }
+      ],
+      "instant": "2023-08-31",
+      "startdate": null,
+      "enddate": null
+    },
+    "B_AW_AX": {
+      "id": "B_AW_AX",
+      "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+      "segments": [{ "tag": "explicitMember", "value": "core:ShareCapital", "dimension": "core:EquityClassesDimension" }],
+      "instant": "2024-08-31",
+      "startdate": null,
+      "enddate": null
+    },
+    "E_AW_AX": {
+      "id": "E_AW_AX",
+      "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+      "segments": [{ "tag": "explicitMember", "value": "core:ShareCapital", "dimension": "core:EquityClassesDimension" }],
+      "instant": "2023-08-31",
+      "startdate": null,
+      "enddate": null
+    },
+    "B_AW_AY": {
+      "id": "B_AW_AY",
+      "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+      "segments": [{ "tag": "explicitMember", "value": "core:RevaluationReserve", "dimension": "core:EquityClassesDimension" }],
+      "instant": "2024-08-31",
+      "startdate": null,
+      "enddate": null
+    },
+    "E_AW_AY": {
+      "id": "E_AW_AY",
+      "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+      "segments": [{ "tag": "explicitMember", "value": "core:RevaluationReserve", "dimension": "core:EquityClassesDimension" }],
+      "instant": "2023-08-31",
+      "startdate": null,
+      "enddate": null
+    },
+    "B_AW_AZ": {
+      "id": "B_AW_AZ",
+      "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+      "segments": [{ "tag": "explicitMember", "value": "core:RetainedEarningsAccumulatedLosses", "dimension": "core:EquityClassesDimension" }],
+      "instant": "2024-08-31",
+      "startdate": null,
+      "enddate": null
+    },
+    "E_AW_AZ": {
+      "id": "E_AW_AZ",
+      "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+      "segments": [{ "tag": "explicitMember", "value": "core:RetainedEarningsAccumulatedLosses", "dimension": "core:EquityClassesDimension" }],
+      "instant": "2023-08-31",
+      "startdate": null,
+      "enddate": null
+    },
+    "C_BA_BB": {
+      "id": "C_BA_BB",
+      "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+      "segments": [{ "tag": "explicitMember", "value": "bus:Director1", "dimension": "bus:EntityOfficersDimension" }],
+      "instant": null,
+      "startdate": "2023-09-01",
+      "enddate": "2024-08-31"
+    },
+    "C_A_BD": {
+      "id": "C_A_BD",
+      "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+      "segments": [{ "tag": "explicitMember", "value": "core:FurnitureFittings", "dimension": "core:PropertyPlantEquipmentClassesDimension" }],
+      "instant": null,
+      "startdate": "2023-09-01",
+      "enddate": "2024-08-31"
+    },
+    "C_A_BE": {
+      "id": "C_A_BE",
+      "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+      "segments": [{ "tag": "explicitMember", "value": "core:ComputerEquipment", "dimension": "core:PropertyPlantEquipmentClassesDimension" }],
+      "instant": null,
+      "startdate": "2023-09-01",
+      "enddate": "2024-08-31"
+    },
+    "F": { "id": "F", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": null, "startdate": "2022-09-01", "enddate": "2023-08-31" },
+    "A_A_BK": {
+      "id": "A_A_BK",
+      "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+      "segments": [{ "tag": "explicitMember", "value": "core:OtherPropertyPlantEquipment", "dimension": "core:PropertyPlantEquipmentClassesDimension" }],
+      "instant": "2023-08-31",
+      "startdate": null,
+      "enddate": null
+    },
+    "C_A_BK": {
+      "id": "C_A_BK",
+      "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+      "segments": [{ "tag": "explicitMember", "value": "core:OtherPropertyPlantEquipment", "dimension": "core:PropertyPlantEquipmentClassesDimension" }],
+      "instant": null,
+      "startdate": "2023-09-01",
+      "enddate": "2024-08-31"
+    },
+    "A": { "id": "A", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": "2023-08-31", "startdate": null, "enddate": null },
+    "B_N_AT": {
+      "id": "B_N_AT",
+      "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+      "segments": [{ "tag": "explicitMember", "value": "core:WithinOneYear", "dimension": "core:MaturitiesOrExpirationPeriodsDimension" }],
+      "instant": "2024-08-31",
+      "startdate": null,
+      "enddate": null
+    },
+    "E_N_AT": {
+      "id": "E_N_AT",
+      "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+      "segments": [{ "tag": "explicitMember", "value": "core:WithinOneYear", "dimension": "core:MaturitiesOrExpirationPeriodsDimension" }],
+      "instant": "2023-08-31",
+      "startdate": null,
+      "enddate": null
+    },
+    "B_J_AS": {
+      "id": "B_J_AS",
+      "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+      "segments": [{ "tag": "explicitMember", "value": "core:CurrentFinancialInstruments", "dimension": "core:FinancialInstrumentCurrentNon-currentDimension" }],
+      "instant": "2024-08-31",
+      "startdate": null,
+      "enddate": null
+    },
+    "E_J_AS": {
+      "id": "E_J_AS",
+      "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+      "segments": [{ "tag": "explicitMember", "value": "core:CurrentFinancialInstruments", "dimension": "core:FinancialInstrumentCurrentNon-currentDimension" }],
+      "instant": "2023-08-31",
+      "startdate": null,
+      "enddate": null
+    },
+    "B_J_AU": {
+      "id": "B_J_AU",
+      "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+      "segments": [{ "tag": "explicitMember", "value": "core:Non-currentFinancialInstruments", "dimension": "core:FinancialInstrumentCurrentNon-currentDimension" }],
+      "instant": "2024-08-31",
+      "startdate": null,
+      "enddate": null
+    },
+    "E_J_AU": {
+      "id": "E_J_AU",
+      "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+      "segments": [{ "tag": "explicitMember", "value": "core:Non-currentFinancialInstruments", "dimension": "core:FinancialInstrumentCurrentNon-currentDimension" }],
+      "instant": "2023-08-31",
+      "startdate": null,
+      "enddate": null
+    },
+    "C_BO_BP": {
+      "id": "C_BO_BP",
+      "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+      "segments": [{ "tag": "explicitMember", "value": "bus:PrivateLimitedCompanyLtd", "dimension": "bus:LegalFormEntityDimension" }],
+      "instant": null,
+      "startdate": "2023-09-01",
+      "enddate": "2024-08-31"
+    },
+    "C_BQ_BR": {
+      "id": "C_BQ_BR",
+      "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+      "segments": [{ "tag": "explicitMember", "value": "bus:SmallCompaniesRegimeForAccounts", "dimension": "bus:ApplicableLegislationDimension" }],
+      "instant": null,
+      "startdate": "2023-09-01",
+      "enddate": "2024-08-31"
+    },
+    "C_BS_BT": {
+      "id": "C_BS_BT",
+      "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+      "segments": [{ "tag": "explicitMember", "value": "bus:FRS102", "dimension": "bus:AccountingStandardsDimension" }],
+      "instant": null,
+      "startdate": "2023-09-01",
+      "enddate": "2024-08-31"
+    },
+    "C_BU_BV": {
+      "id": "C_BU_BV",
+      "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+      "segments": [{ "tag": "explicitMember", "value": "bus:AuditExemptWithAccountantsReport", "dimension": "bus:AccountsStatusDimension" }],
+      "instant": null,
+      "startdate": "2023-09-01",
+      "enddate": "2024-08-31"
+    },
+    "C_BA_BX": {
+      "id": "C_BA_BX",
+      "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+      "segments": [{ "tag": "explicitMember", "value": "bus:Director2", "dimension": "bus:EntityOfficersDimension" }],
+      "instant": null,
+      "startdate": "2023-09-01",
+      "enddate": "2024-08-31"
+    },
+    "C_BY_BZ": {
+      "id": "C_BY_BZ",
+      "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+      "segments": [{ "tag": "explicitMember", "value": "bus:FullAccounts", "dimension": "bus:AccountsTypeDimension" }],
+      "instant": null,
+      "startdate": "2023-09-01",
+      "enddate": "2024-08-31"
+    }
+  },
+  "units": { "Pure": "xbrli:pure", "Shares": "xbrli:shares", "GBP": "iso4217:GBP" },
+  "nonnumeric": [
+    {
+      "schema": "bus",
+      "name": "CountryFormationOrIncorporation",
+      "context": { "id": "C", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": null, "startdate": "2023-09-01", "enddate": "2024-08-31" },
+      "format": null,
+      "text": "",
+      "value": ""
+    },
+    {
+      "schema": "bus",
+      "name": "UKCompaniesHouseRegisteredNumber",
+      "context": { "id": "C", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": null, "startdate": "2023-09-01", "enddate": "2024-08-31" },
+      "format": null,
+      "text": "SC606050",
+      "value": "SC606050"
+    },
+    {
+      "schema": "bus",
+      "name": "EntityCurrentLegalOrRegisteredName",
+      "context": { "id": "C", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": null, "startdate": "2023-09-01", "enddate": "2024-08-31" },
+      "format": null,
+      "text": "!NSPIRED INVESTMENTS LTD",
+      "value": "!NSPIRED INVESTMENTS LTD"
+    },
+    {
+      "schema": "bus",
+      "name": "ReportTitle",
+      "context": { "id": "C", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": null, "startdate": "2023-09-01", "enddate": "2024-08-31" },
+      "format": null,
+      "text": "UNAUDITED FINANCIAL STATEMENTS",
+      "value": "UNAUDITED FINANCIAL STATEMENTS"
+    },
+    {
+      "schema": "bus",
+      "name": "EntityCurrentLegalOrRegisteredName",
+      "context": { "id": "C", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": null, "startdate": "2023-09-01", "enddate": "2024-08-31" },
+      "format": null,
+      "text": "!NSPIRED INVESTMENTS LTD",
+      "value": "!NSPIRED INVESTMENTS LTD"
+    },
+    {
+      "schema": "bus",
+      "name": "EntityCurrentLegalOrRegisteredName",
+      "context": { "id": "C", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": null, "startdate": "2023-09-01", "enddate": "2024-08-31" },
+      "format": null,
+      "text": "!NSPIRED INVESTMENTS LTD",
+      "value": "!NSPIRED INVESTMENTS LTD"
+    },
+    {
+      "schema": "bus",
+      "name": "BalanceSheetDate",
+      "context": { "id": "B", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": "2024-08-31", "startdate": null, "enddate": null },
+      "format": { "format": "datelonguk", "namespace": "ixt", "scale": 0, "sign": null },
+      "text": "31 August 2024",
+      "value": "2024-08-31"
+    },
+    {
+      "schema": "bus",
+      "name": "EntityCurrentLegalOrRegisteredName",
+      "context": { "id": "C", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": null, "startdate": "2023-09-01", "enddate": "2024-08-31" },
+      "format": null,
+      "text": "!NSPIRED INVESTMENTS LTD",
+      "value": "!NSPIRED INVESTMENTS LTD"
+    },
+    {
+      "schema": "bus",
+      "name": "BalanceSheetDate",
+      "context": { "id": "B", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": "2024-08-31", "startdate": null, "enddate": null },
+      "format": { "format": "datelonguk", "namespace": "ixt", "scale": 0, "sign": null },
+      "text": "31 August 2024",
+      "value": "2024-08-31"
+    },
+    {
+      "schema": "direp",
+      "name": "StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies",
+      "context": { "id": "C", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": null, "startdate": "2023-09-01", "enddate": "2024-08-31" },
+      "format": null,
+      "text": "For the financial year ended 31 August 2024 the company was entitled to exemption from audit under section 477 of the Companies Act 2006 relating to small companies.",
+      "value": "For the financial year ended 31 August 2024 the company was entitled to exemption from audit under section 477 of the Companies Act 2006 relating to small companies."
+    },
+    {
+      "schema": "direp",
+      "name": "StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit",
+      "context": { "id": "C", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": null, "startdate": "2023-09-01", "enddate": "2024-08-31" },
+      "format": null,
+      "text": "The members have not required the company to obtain an audit of its financial statements for the year in question in accordance with section 476.",
+      "value": "The members have not required the company to obtain an audit of its financial statements for the year in question in accordance with section 476."
+    },
+    {
+      "schema": "direp",
+      "name": "StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct",
+      "context": { "id": "C", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": null, "startdate": "2023-09-01", "enddate": "2024-08-31" },
+      "format": null,
+      "text": "The directors acknowledge their responsibilities for complying with the requirements of the Companies Act 2006 with respect to accounting records and the preparation of financial statements.",
+      "value": "The directors acknowledge their responsibilities for complying with the requirements of the Companies Act 2006 with respect to accounting records and the preparation of financial statements."
+    },
+    {
+      "schema": "direp",
+      "name": "StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime",
+      "context": { "id": "C", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": null, "startdate": "2023-09-01", "enddate": "2024-08-31" },
+      "format": null,
+      "text": "These financial statements have been prepared and delivered in accordance with the provisions applicable to companies subject to the small companies regime.",
+      "value": "These financial statements have been prepared and delivered in accordance with the provisions applicable to companies subject to the small companies regime."
+    },
+    {
+      "schema": "direp",
+      "name": "EntityHasTakenExemptionUnderCompaniesActInNotPublishingItsOwnProfitLossAccountTruefalse",
+      "context": { "id": "C", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": null, "startdate": "2023-09-01", "enddate": "2024-08-31" },
+      "format": null,
+      "text": "true",
+      "value": "true"
+    },
+    {
+      "schema": "core",
+      "name": "DateAuthorisationFinancialStatementsForIssue",
+      "context": { "id": "B", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": "2024-08-31", "startdate": null, "enddate": null },
+      "format": { "format": "datelonguk", "namespace": "ixt", "scale": 0, "sign": null },
+      "text": "3 December 2024",
+      "value": "2024-12-03"
+    },
+    {
+      "schema": "core",
+      "name": "DirectorSigningFinancialStatements",
+      "context": {
+        "id": "C_BA_BB",
+        "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+        "segments": [{ "tag": "explicitMember", "value": "bus:Director1", "dimension": "bus:EntityOfficersDimension" }],
+        "instant": null,
+        "startdate": "2023-09-01",
+        "enddate": "2024-08-31"
+      },
+      "format": null,
+      "text": "",
+      "value": ""
+    },
+    {
+      "schema": "bus",
+      "name": "CountryFormationOrIncorporation",
+      "context": { "id": "C", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": null, "startdate": "2023-09-01", "enddate": "2024-08-31" },
+      "format": null,
+      "text": "",
+      "value": ""
+    },
+    {
+      "schema": "bus",
+      "name": "UKCompaniesHouseRegisteredNumber",
+      "context": { "id": "C", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": null, "startdate": "2023-09-01", "enddate": "2024-08-31" },
+      "format": null,
+      "text": "SC606050",
+      "value": "SC606050"
+    },
+    {
+      "schema": "bus",
+      "name": "EntityCurrentLegalOrRegisteredName",
+      "context": { "id": "C", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": null, "startdate": "2023-09-01", "enddate": "2024-08-31" },
+      "format": null,
+      "text": "!NSPIRED INVESTMENTS LTD",
+      "value": "!NSPIRED INVESTMENTS LTD"
+    },
+    {
+      "schema": "core",
+      "name": "StatementComplianceWithApplicableReportingFramework",
+      "context": { "id": "C", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": null, "startdate": "2023-09-01", "enddate": "2024-08-31" },
+      "format": null,
+      "text": "These financial statements have been prepared in accordance with FRS 102 \u201cThe Financial Reporting Standard applicable in the UK and Republic of Ireland\u201d (\u201cFRS 102\u201d) and the requirements of the Companies Act 2006 as applicable to companies subject to the small companies regime. The disclosure requirements of section 1A of FRS 102 have been applied other than where additional disclosure is required to show a true and fair view.",
+      "value": "These financial statements have been prepared in accordance with FRS 102 \u201cThe Financial Reporting Standard applicable in the UK and Republic of Ireland\u201d (\u201cFRS 102\u201d) and the requirements of the Companies Act 2006 as applicable to companies subject to the small companies regime. The disclosure requirements of section 1A of FRS 102 have been applied other than where additional disclosure is required to show a true and fair view."
+    },
+    {
+      "schema": "core",
+      "name": "GeneralDescriptionBasisMeasurementUsedInPreparingFinancialStatements",
+      "context": { "id": "C", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": null, "startdate": "2023-09-01", "enddate": "2024-08-31" },
+      "format": null,
+      "text": "The financial statements have been prepared under the historical cost convention, [modified to include the revaluation of freehold properties and to include investment properties and certain financial instruments at fair value]. The principal accounting policies adopted are set out below.",
+      "value": "The financial statements have been prepared under the historical cost convention, [modified to include the revaluation of freehold properties and to include investment properties and certain financial instruments at fair value]. The principal accounting policies adopted are set out below."
+    },
+    {
+      "schema": "core",
+      "name": "RevenueRecognitionPolicy",
+      "context": { "id": "C", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": null, "startdate": "2023-09-01", "enddate": "2024-08-31" },
+      "format": null,
+      "text": "Turnover is recognised at the fair value of the consideration received or receivable for goods and services provided in the normal course of business, and is shown net of VAT and other sales related taxes. The fair value of consideration takes into account trade discounts, settlement discounts and volume rebates.When cash inflows are deferred and represent a financing arrangement, the fair value of the consideration is the present value of the future receipts. The difference between the fair value of the consideration and the nominal amount received is recognised as interest income.",
+      "value": "Turnover is recognised at the fair value of the consideration received or receivable for goods and services provided in the normal course of business, and is shown net of VAT and other sales related taxes. The fair value of consideration takes into account trade discounts, settlement discounts and volume rebates.When cash inflows are deferred and represent a financing arrangement, the fair value of the consideration is the present value of the future receipts. The difference between the fair value of the consideration and the nominal amount received is recognised as interest income."
+    },
+    {
+      "schema": "core",
+      "name": "DescriptionMeasurementBasisForPropertyPlantEquipment",
+      "context": { "id": "C", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": null, "startdate": "2023-09-01", "enddate": "2024-08-31" },
+      "format": null,
+      "text": "Tangible fixed assets are initially measured at cost and subsequently measured at cost or valuation, net of depreciation and any impairment losses.",
+      "value": "Tangible fixed assets are initially measured at cost and subsequently measured at cost or valuation, net of depreciation and any impairment losses."
+    },
+    {
+      "schema": "core",
+      "name": "DescriptionDepreciationMethodForPropertyPlantEquipment",
+      "context": { "id": "C", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": null, "startdate": "2023-09-01", "enddate": "2024-08-31" },
+      "format": null,
+      "text": "Depreciation is recognised so as to write off the cost or valuation of assets less their residual values over their useful lives on the following bases:",
+      "value": "Depreciation is recognised so as to write off the cost or valuation of assets less their residual values over their useful lives on the following bases:"
+    },
+    {
+      "schema": "core",
+      "name": "DescriptionDepreciationMethodForPropertyPlantEquipment",
+      "context": {
+        "id": "C_A_BD",
+        "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+        "segments": [{ "tag": "explicitMember", "value": "core:FurnitureFittings", "dimension": "core:PropertyPlantEquipmentClassesDimension" }],
+        "instant": null,
+        "startdate": "2023-09-01",
+        "enddate": "2024-08-31"
+      },
+      "format": null,
+      "text": "15% reducing balance",
+      "value": "15% reducing balance"
+    },
+    {
+      "schema": "core",
+      "name": "DescriptionDepreciationMethodForPropertyPlantEquipment",
+      "context": {
+        "id": "C_A_BE",
+        "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+        "segments": [{ "tag": "explicitMember", "value": "core:ComputerEquipment", "dimension": "core:PropertyPlantEquipmentClassesDimension" }],
+        "instant": null,
+        "startdate": "2023-09-01",
+        "enddate": "2024-08-31"
+      },
+      "format": null,
+      "text": "25% reducing balance",
+      "value": "25% reducing balance"
+    },
+    {
+      "schema": "core",
+      "name": "ModelUsedToMeasureInvestmentProperty",
+      "context": { "id": "C", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": null, "startdate": "2023-09-01", "enddate": "2024-08-31" },
+      "format": null,
+      "text": "Investment property, which is property held to earn rentals and/or for capital appreciation, is initially recognised at cost, which includes the purchase cost and any directly attributable expenditure. Subsequently it is measured at fair value at the reporting end date. Changes in fair value are recognised in profit or loss.",
+      "value": "Investment property, which is property held to earn rentals and/or for capital appreciation, is initially recognised at cost, which includes the purchase cost and any directly attributable expenditure. Subsequently it is measured at fair value at the reporting end date. Changes in fair value are recognised in profit or loss."
+    },
+    {
+      "schema": "bus",
+      "name": "EntityCurrentLegalOrRegisteredName",
+      "context": { "id": "C", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": null, "startdate": "2023-09-01", "enddate": "2024-08-31" },
+      "format": null,
+      "text": "!NSPIRED INVESTMENTS LTD",
+      "value": "!NSPIRED INVESTMENTS LTD"
+    },
+    {
+      "schema": "core",
+      "name": "ImpairmentNon-financialAssetsPolicy",
+      "context": { "id": "C", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": null, "startdate": "2023-09-01", "enddate": "2024-08-31" },
+      "format": null,
+      "text": "Recoverable amount is the higher of fair value less costs to sell and value in use. In assessing value in use, the estimated future cash flows are discounted to their present value using a pre-tax discount rate that reflects current market assessments of the time value of money and the risks specific to the asset for which the estimates of future cash flows have not been adjusted.If the recoverable amount of an asset (or cash-generating unit) is estimated to be less than its carrying amount, the carrying amount of the asset (or cash-generating unit) is reduced to its recoverable amount. An impairment loss is recognised immediately in profit or loss, unless the relevant asset is carried at a revalued amount, in which case the impairment loss is treated as a revaluation decrease.Recognised impairment losses are reversed if, and only if, the reasons for the impairment loss have ceased to apply. Where an impairment loss subsequently reverses, the carrying amount of the asset (or cash-generating unit) is increased to the revised estimate of its recoverable amount, but so that the increased carrying amount does not exceed the carrying amount that would have been determined had no impairment loss been recognised for the asset (or cash-generating unit) in prior years. A reversal of an impairment loss is recognised immediately in profit or loss, unless the relevant asset is carried at a revalued amount, in which case the reversal of the impairment loss is treated as a revaluation increase.",
+      "value": "Recoverable amount is the higher of fair value less costs to sell and value in use. In assessing value in use, the estimated future cash flows are discounted to their present value using a pre-tax discount rate that reflects current market assessments of the time value of money and the risks specific to the asset for which the estimates of future cash flows have not been adjusted.If the recoverable amount of an asset (or cash-generating unit) is estimated to be less than its carrying amount, the carrying amount of the asset (or cash-generating unit) is reduced to its recoverable amount. An impairment loss is recognised immediately in profit or loss, unless the relevant asset is carried at a revalued amount, in which case the impairment loss is treated as a revaluation decrease.Recognised impairment losses are reversed if, and only if, the reasons for the impairment loss have ceased to apply. Where an impairment loss subsequently reverses, the carrying amount of the asset (or cash-generating unit) is increased to the revised estimate of its recoverable amount, but so that the increased carrying amount does not exceed the carrying amount that would have been determined had no impairment loss been recognised for the asset (or cash-generating unit) in prior years. A reversal of an impairment loss is recognised immediately in profit or loss, unless the relevant asset is carried at a revalued amount, in which case the reversal of the impairment loss is treated as a revaluation increase."
+    },
+    {
+      "schema": "core",
+      "name": "CashCashEquivalentsPolicy",
+      "context": { "id": "C", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": null, "startdate": "2023-09-01", "enddate": "2024-08-31" },
+      "format": null,
+      "text": "Cash and cash equivalentsare basic financial assets and include cash in hand, deposits held at call with banks, other short-term liquid investments with original maturities of three months or less, and bank overdrafts. Bank overdrafts are shown within borrowings in current liabilities.",
+      "value": "Cash and cash equivalentsare basic financial assets and include cash in hand, deposits held at call with banks, other short-term liquid investments with original maturities of three months or less, and bank overdrafts. Bank overdrafts are shown within borrowings in current liabilities."
+    },
+    {
+      "schema": "core",
+      "name": "FinancialInstrumentsClassificationPolicy",
+      "context": { "id": "C", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": null, "startdate": "2023-09-01", "enddate": "2024-08-31" },
+      "format": null,
+      "text": "The company has elected to apply the provisions of Section 11 \u2018Basic Financial Instruments\u2019 and Section 12 \u2018Other Financial Instruments Issues\u2019 of FRS 102 to all of its financial instruments. Financial instruments are recognised in the company's balance sheet when the company becomes party to the contractual provisions of the instrument.Financial assets and liabilities are offset, with the net amounts presented in the financial statements, when there is a legally enforceable right to set off the recognised amounts and there is an intention to settle on a net basis or to realise the asset and settle the liability simultaneously.",
+      "value": "The company has elected to apply the provisions of Section 11 \u2018Basic Financial Instruments\u2019 and Section 12 \u2018Other Financial Instruments Issues\u2019 of FRS 102 to all of its financial instruments. Financial instruments are recognised in the company's balance sheet when the company becomes party to the contractual provisions of the instrument.Financial assets and liabilities are offset, with the net amounts presented in the financial statements, when there is a legally enforceable right to set off the recognised amounts and there is an intention to settle on a net basis or to realise the asset and settle the liability simultaneously."
+    },
+    {
+      "schema": "bus",
+      "name": "EntityCurrentLegalOrRegisteredName",
+      "context": { "id": "C", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": null, "startdate": "2023-09-01", "enddate": "2024-08-31" },
+      "format": null,
+      "text": "!NSPIRED INVESTMENTS LTD",
+      "value": "!NSPIRED INVESTMENTS LTD"
+    },
+    {
+      "schema": "core",
+      "name": "TaxPolicy",
+      "context": { "id": "C", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": null, "startdate": "2023-09-01", "enddate": "2024-08-31" },
+      "format": null,
+      "text": "The tax expense represents the sum of the tax currently payable and deferred tax.",
+      "value": "The tax expense represents the sum of the tax currently payable and deferred tax."
+    },
+    {
+      "schema": "core",
+      "name": "CurrentIncomeTaxPolicy",
+      "context": { "id": "C", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": null, "startdate": "2023-09-01", "enddate": "2024-08-31" },
+      "format": null,
+      "text": "The tax currently payable is based on taxable profit for the year. Taxable profit differs from net profit as reported in the profit and loss account because it excludes items of income or expense that are taxable or deductible in other years and it further excludes items that are never taxable or deductible. The company\u2019s liability for current tax is calculated using tax rates that have been enacted or substantively enacted by the reporting end date.",
+      "value": "The tax currently payable is based on taxable profit for the year. Taxable profit differs from net profit as reported in the profit and loss account because it excludes items of income or expense that are taxable or deductible in other years and it further excludes items that are never taxable or deductible. The company\u2019s liability for current tax is calculated using tax rates that have been enacted or substantively enacted by the reporting end date."
+    },
+    {
+      "schema": "core",
+      "name": "DeferredTaxPolicy",
+      "context": { "id": "C", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": null, "startdate": "2023-09-01", "enddate": "2024-08-31" },
+      "format": null,
+      "text": "Deferred tax liabilities are generally recognised for all timing differences and deferred tax assets are recognised to the extent that it is probable that they will be recovered against the reversal of deferred tax liabilities or other future taxable profits. Such assets and liabilities are not recognised if the timing difference arises from goodwill or from the initial recognition of other assets and liabilities in a transaction that affects neither the tax profit nor the accounting profit.The carrying amount of deferred tax assets is reviewed at each reporting end date and reduced to the extent that it is no longer probable that sufficient taxable profits will be available to allow all or part of the asset to be recovered. Deferred tax is calculated at the tax rates that are expected to apply in the period when the liability is settled or the asset is realised. Deferred tax is charged or credited in the profit and loss account, except when it relates to items charged or credited directly to equity, in which case the deferred tax is also dealt with in equity. Deferred tax assets and liabilities are offset when the company has a legally enforceable right to offset current tax assets and liabilities and the deferred tax assets and liabilities relate to taxes levied by the same tax authority.",
+      "value": "Deferred tax liabilities are generally recognised for all timing differences and deferred tax assets are recognised to the extent that it is probable that they will be recovered against the reversal of deferred tax liabilities or other future taxable profits. Such assets and liabilities are not recognised if the timing difference arises from goodwill or from the initial recognition of other assets and liabilities in a transaction that affects neither the tax profit nor the accounting profit.The carrying amount of deferred tax assets is reviewed at each reporting end date and reduced to the extent that it is no longer probable that sufficient taxable profits will be available to allow all or part of the asset to be recovered. Deferred tax is calculated at the tax rates that are expected to apply in the period when the liability is settled or the asset is realised. Deferred tax is charged or credited in the profit and loss account, except when it relates to items charged or credited directly to equity, in which case the deferred tax is also dealt with in equity. Deferred tax assets and liabilities are offset when the company has a legally enforceable right to offset current tax assets and liabilities and the deferred tax assets and liabilities relate to taxes levied by the same tax authority."
+    },
+    {
+      "schema": "core",
+      "name": "EmployeeBenefitsPolicy",
+      "context": { "id": "C", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": null, "startdate": "2023-09-01", "enddate": "2024-08-31" },
+      "format": null,
+      "text": "The costs of short-term employee benefits are recognised as a liability and an expense, unless those costs are required to be recognised as part of the cost of stock or fixed assets.  The cost of any unused holiday entitlement is recognised in the period in which the employee\u2019s services are received.Termination benefits are recognised immediately as an expense when the company is demonstrably committed to terminate the employment of an employee or to provide termination benefits.",
+      "value": "The costs of short-term employee benefits are recognised as a liability and an expense, unless those costs are required to be recognised as part of the cost of stock or fixed assets.  The cost of any unused holiday entitlement is recognised in the period in which the employee\u2019s services are received.Termination benefits are recognised immediately as an expense when the company is demonstrably committed to terminate the employment of an employee or to provide termination benefits."
+    },
+    {
+      "schema": "bus",
+      "name": "EntityCurrentLegalOrRegisteredName",
+      "context": { "id": "C", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": null, "startdate": "2023-09-01", "enddate": "2024-08-31" },
+      "format": null,
+      "text": "!NSPIRED INVESTMENTS LTD",
+      "value": "!NSPIRED INVESTMENTS LTD"
+    },
+    {
+      "schema": "core",
+      "name": "ForeignCurrencyTranslationOperationsPolicy",
+      "context": { "id": "C", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": null, "startdate": "2023-09-01", "enddate": "2024-08-31" },
+      "format": null,
+      "text": "Transactions in currencies other than pounds sterling are recorded at the rates of exchange prevailing at the dates of the transactions. At each reporting end date, monetary assets and liabilities that are denominated in foreign currencies are retranslated at the rates prevailing on the reporting end date. Gains and losses arising on translation in the period are included in profit or loss.",
+      "value": "Transactions in currencies other than pounds sterling are recorded at the rates of exchange prevailing at the dates of the transactions. At each reporting end date, monetary assets and liabilities that are denominated in foreign currencies are retranslated at the rates prevailing on the reporting end date. Gains and losses arising on translation in the period are included in profit or loss."
+    },
+    {
+      "schema": "bus",
+      "name": "EntityCurrentLegalOrRegisteredName",
+      "context": { "id": "C", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": null, "startdate": "2023-09-01", "enddate": "2024-08-31" },
+      "format": null,
+      "text": "!NSPIRED INVESTMENTS LTD",
+      "value": "!NSPIRED INVESTMENTS LTD"
+    },
+    {
+      "schema": "bus",
+      "name": "EntityCurrentLegalOrRegisteredName",
+      "context": { "id": "C", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": null, "startdate": "2023-09-01", "enddate": "2024-08-31" },
+      "format": null,
+      "text": "!NSPIRED INVESTMENTS LTD",
+      "value": "!NSPIRED INVESTMENTS LTD"
+    },
+    {
+      "schema": "bus",
+      "name": "EndDateForPeriodCoveredByReport",
+      "context": { "id": "B", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": "2024-08-31", "startdate": null, "enddate": null },
+      "format": null,
+      "text": "2024-08-31",
+      "value": "2024-08-31"
+    },
+    {
+      "schema": "bus",
+      "name": "StartDateForPeriodCoveredByReport",
+      "context": { "id": "B", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": "2024-08-31", "startdate": null, "enddate": null },
+      "format": null,
+      "text": "2023-09-01",
+      "value": "2023-09-01"
+    },
+    {
+      "schema": "bus",
+      "name": "ReportAnAmendedRevisedVersionPreviouslyFiledReportTruefalse",
+      "context": { "id": "C", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": null, "startdate": "2023-09-01", "enddate": "2024-08-31" },
+      "format": null,
+      "text": "false",
+      "value": "false"
+    },
+    {
+      "schema": "bus",
+      "name": "ReportIncludesDetailedProfitLossStatementTruefalse",
+      "context": { "id": "C", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": null, "startdate": "2023-09-01", "enddate": "2024-08-31" },
+      "format": null,
+      "text": "false",
+      "value": "false"
+    },
+    {
+      "schema": "bus",
+      "name": "EntityDormantTruefalse",
+      "context": { "id": "C", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": null, "startdate": "2023-09-01", "enddate": "2024-08-31" },
+      "format": null,
+      "text": "false",
+      "value": "false"
+    },
+    {
+      "schema": "bus",
+      "name": "EntityTradingStatus",
+      "context": { "id": "C", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": null, "startdate": "2023-09-01", "enddate": "2024-08-31" },
+      "format": null,
+      "text": "",
+      "value": ""
+    },
+    {
+      "schema": "aurep",
+      "name": "DateAuditorsReport",
+      "context": { "id": "B", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": "2024-08-31", "startdate": null, "enddate": null },
+      "format": { "format": "datelonguk", "namespace": "ixt", "scale": 0, "sign": null },
+      "text": "03 December 2024",
+      "value": "2024-12-03"
+    },
+    {
+      "schema": "bus",
+      "name": "LegalFormEntity",
+      "context": {
+        "id": "C_BO_BP",
+        "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+        "segments": [{ "tag": "explicitMember", "value": "bus:PrivateLimitedCompanyLtd", "dimension": "bus:LegalFormEntityDimension" }],
+        "instant": null,
+        "startdate": "2023-09-01",
+        "enddate": "2024-08-31"
+      },
+      "format": null,
+      "text": "",
+      "value": ""
+    },
+    {
+      "schema": "bus",
+      "name": "NameProductionSoftware",
+      "context": { "id": "C", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": null, "startdate": "2023-09-01", "enddate": "2024-08-31" },
+      "format": null,
+      "text": "CCH Software",
+      "value": "CCH Software"
+    },
+    {
+      "schema": "bus",
+      "name": "ApplicableLegislation",
+      "context": {
+        "id": "C_BQ_BR",
+        "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+        "segments": [{ "tag": "explicitMember", "value": "bus:SmallCompaniesRegimeForAccounts", "dimension": "bus:ApplicableLegislationDimension" }],
+        "instant": null,
+        "startdate": "2023-09-01",
+        "enddate": "2024-08-31"
+      },
+      "format": null,
+      "text": "",
+      "value": ""
+    },
+    {
+      "schema": "bus",
+      "name": "VersionProductionSoftware",
+      "context": { "id": "C", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": null, "startdate": "2023-09-01", "enddate": "2024-08-31" },
+      "format": null,
+      "text": "CCH Accounts Production 2024.310",
+      "value": "CCH Accounts Production 2024.310"
+    },
+    {
+      "schema": "bus",
+      "name": "AccountingStandardsApplied",
+      "context": {
+        "id": "C_BS_BT",
+        "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+        "segments": [{ "tag": "explicitMember", "value": "bus:FRS102", "dimension": "bus:AccountingStandardsDimension" }],
+        "instant": null,
+        "startdate": "2023-09-01",
+        "enddate": "2024-08-31"
+      },
+      "format": null,
+      "text": "",
+      "value": ""
+    },
+    {
+      "schema": "bus",
+      "name": "AccountsStatusAuditedOrUnaudited",
+      "context": {
+        "id": "C_BU_BV",
+        "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+        "segments": [{ "tag": "explicitMember", "value": "bus:AuditExemptWithAccountantsReport", "dimension": "bus:AccountsStatusDimension" }],
+        "instant": null,
+        "startdate": "2023-09-01",
+        "enddate": "2024-08-31"
+      },
+      "format": null,
+      "text": "",
+      "value": ""
+    },
+    {
+      "schema": "bus",
+      "name": "DescriptionPrincipalActivities",
+      "context": { "id": "C", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": null, "startdate": "2023-09-01", "enddate": "2024-08-31" },
+      "format": null,
+      "text": "No description of principal activity",
+      "value": "No description of principal activity"
+    },
+    {
+      "schema": "bus",
+      "name": "ScopeAccounts",
+      "context": { "id": "C", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": null, "startdate": "2023-09-01", "enddate": "2024-08-31" },
+      "format": null,
+      "text": "",
+      "value": ""
+    },
+    {
+      "schema": "bus",
+      "name": "NameEntityOfficer",
+      "context": {
+        "id": "C_BA_BB",
+        "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+        "segments": [{ "tag": "explicitMember", "value": "bus:Director1", "dimension": "bus:EntityOfficersDimension" }],
+        "instant": null,
+        "startdate": "2023-09-01",
+        "enddate": "2024-08-31"
+      },
+      "format": null,
+      "text": "A Wigham",
+      "value": "A Wigham"
+    },
+    {
+      "schema": "bus",
+      "name": "NameEntityOfficer",
+      "context": {
+        "id": "C_BA_BX",
+        "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+        "segments": [{ "tag": "explicitMember", "value": "bus:Director2", "dimension": "bus:EntityOfficersDimension" }],
+        "instant": null,
+        "startdate": "2023-09-01",
+        "enddate": "2024-08-31"
+      },
+      "format": null,
+      "text": "T Wigham",
+      "value": "T Wigham"
+    },
+    {
+      "schema": "bus",
+      "name": "AccountsType",
+      "context": {
+        "id": "C_BY_BZ",
+        "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+        "segments": [{ "tag": "explicitMember", "value": "bus:FullAccounts", "dimension": "bus:AccountsTypeDimension" }],
+        "instant": null,
+        "startdate": "2023-09-01",
+        "enddate": "2024-08-31"
+      },
+      "format": null,
+      "text": "",
+      "value": ""
+    }
+  ],
+  "numeric": [
+    {
+      "name": "PropertyPlantEquipment",
+      "schema": "core",
+      "text": "548",
+      "context": { "id": "B", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": "2024-08-31", "startdate": null, "enddate": null },
+      "unit": "iso4217:GBP",
+      "value": 548.0,
+      "format": { "decimals": 0, "format": null, "namespace": null, "scale": 0, "sign": "" }
+    },
+    {
+      "name": "PropertyPlantEquipment",
+      "schema": "core",
+      "text": "308",
+      "context": { "id": "E", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": "2023-08-31", "startdate": null, "enddate": null },
+      "unit": "iso4217:GBP",
+      "value": 308.0,
+      "format": { "decimals": 0, "format": null, "namespace": null, "scale": 0, "sign": "" }
+    },
+    {
+      "name": "InvestmentProperty",
+      "schema": "core",
+      "text": "376,722",
+      "context": { "id": "B", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": "2024-08-31", "startdate": null, "enddate": null },
+      "unit": "iso4217:GBP",
+      "value": 376722.0,
+      "format": { "decimals": 0, "format": "numcommadot", "namespace": "ixt", "scale": 0, "sign": "" }
+    },
+    {
+      "name": "InvestmentProperty",
+      "schema": "core",
+      "text": "372,872",
+      "context": { "id": "E", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": "2023-08-31", "startdate": null, "enddate": null },
+      "unit": "iso4217:GBP",
+      "value": 372872.0,
+      "format": { "decimals": 0, "format": "numcommadot", "namespace": "ixt", "scale": 0, "sign": "" }
+    },
+    {
+      "name": "FixedAssets",
+      "schema": "core",
+      "text": "377,270",
+      "context": { "id": "B", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": "2024-08-31", "startdate": null, "enddate": null },
+      "unit": "iso4217:GBP",
+      "value": 377270.0,
+      "format": { "decimals": 0, "format": "numcommadot", "namespace": "ixt", "scale": 0, "sign": "" }
+    },
+    {
+      "name": "FixedAssets",
+      "schema": "core",
+      "text": "373,180",
+      "context": { "id": "E", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": "2023-08-31", "startdate": null, "enddate": null },
+      "unit": "iso4217:GBP",
+      "value": 373180.0,
+      "format": { "decimals": 0, "format": "numcommadot", "namespace": "ixt", "scale": 0, "sign": "" }
+    },
+    {
+      "name": "Debtors",
+      "schema": "core",
+      "text": "1,102",
+      "context": { "id": "B", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": "2024-08-31", "startdate": null, "enddate": null },
+      "unit": "iso4217:GBP",
+      "value": 1102.0,
+      "format": { "decimals": 0, "format": "numcommadot", "namespace": "ixt", "scale": 0, "sign": "" }
+    },
+    {
+      "name": "Debtors",
+      "schema": "core",
+      "text": "1,052",
+      "context": { "id": "E", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": "2023-08-31", "startdate": null, "enddate": null },
+      "unit": "iso4217:GBP",
+      "value": 1052.0,
+      "format": { "decimals": 0, "format": "numcommadot", "namespace": "ixt", "scale": 0, "sign": "" }
+    },
+    {
+      "name": "CashBankOnHand",
+      "schema": "core",
+      "text": "2,803",
+      "context": { "id": "B", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": "2024-08-31", "startdate": null, "enddate": null },
+      "unit": "iso4217:GBP",
+      "value": 2803.0,
+      "format": { "decimals": 0, "format": "numcommadot", "namespace": "ixt", "scale": 0, "sign": "" }
+    },
+    {
+      "name": "CashBankOnHand",
+      "schema": "core",
+      "text": "2,929",
+      "context": { "id": "E", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": "2023-08-31", "startdate": null, "enddate": null },
+      "unit": "iso4217:GBP",
+      "value": 2929.0,
+      "format": { "decimals": 0, "format": "numcommadot", "namespace": "ixt", "scale": 0, "sign": "" }
+    },
+    {
+      "name": "CurrentAssets",
+      "schema": "core",
+      "text": "3,905",
+      "context": { "id": "B", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": "2024-08-31", "startdate": null, "enddate": null },
+      "unit": "iso4217:GBP",
+      "value": 3905.0,
+      "format": { "decimals": 0, "format": "numcommadot", "namespace": "ixt", "scale": 0, "sign": "" }
+    },
+    {
+      "name": "CurrentAssets",
+      "schema": "core",
+      "text": "3,981",
+      "context": { "id": "E", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": "2023-08-31", "startdate": null, "enddate": null },
+      "unit": "iso4217:GBP",
+      "value": 3981.0,
+      "format": { "decimals": 0, "format": "numcommadot", "namespace": "ixt", "scale": 0, "sign": "" }
+    },
+    {
+      "name": "Creditors",
+      "schema": "core",
+      "text": "104,826",
+      "context": {
+        "id": "B_J_AS_N_AT",
+        "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+        "segments": [
+          { "tag": "explicitMember", "value": "core:CurrentFinancialInstruments", "dimension": "core:FinancialInstrumentCurrentNon-currentDimension" },
+          { "tag": "explicitMember", "value": "core:WithinOneYear", "dimension": "core:MaturitiesOrExpirationPeriodsDimension" }
+        ],
+        "instant": "2024-08-31",
+        "startdate": null,
+        "enddate": null
+      },
+      "unit": "iso4217:GBP",
+      "value": 104826.0,
+      "format": { "decimals": 0, "format": "numcommadot", "namespace": "ixt", "scale": 0, "sign": "" }
+    },
+    {
+      "name": "Creditors",
+      "schema": "core",
+      "text": "55,644",
+      "context": {
+        "id": "E_J_AS_N_AT",
+        "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+        "segments": [
+          { "tag": "explicitMember", "value": "core:CurrentFinancialInstruments", "dimension": "core:FinancialInstrumentCurrentNon-currentDimension" },
+          { "tag": "explicitMember", "value": "core:WithinOneYear", "dimension": "core:MaturitiesOrExpirationPeriodsDimension" }
+        ],
+        "instant": "2023-08-31",
+        "startdate": null,
+        "enddate": null
+      },
+      "unit": "iso4217:GBP",
+      "value": 55644.0,
+      "format": { "decimals": 0, "format": "numcommadot", "namespace": "ixt", "scale": 0, "sign": "" }
+    },
+    {
+      "name": "NetCurrentAssetsLiabilities",
+      "schema": "core",
+      "text": "100,921",
+      "context": { "id": "B", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": "2024-08-31", "startdate": null, "enddate": null },
+      "unit": "iso4217:GBP",
+      "value": -100921.0,
+      "format": { "decimals": 0, "format": "numcommadot", "namespace": "ixt", "scale": 0, "sign": "-" }
+    },
+    {
+      "name": "NetCurrentAssetsLiabilities",
+      "schema": "core",
+      "text": "51,663",
+      "context": { "id": "E", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": "2023-08-31", "startdate": null, "enddate": null },
+      "unit": "iso4217:GBP",
+      "value": -51663.0,
+      "format": { "decimals": 0, "format": "numcommadot", "namespace": "ixt", "scale": 0, "sign": "-" }
+    },
+    {
+      "name": "TotalAssetsLessCurrentLiabilities",
+      "schema": "core",
+      "text": "276,349",
+      "context": { "id": "B", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": "2024-08-31", "startdate": null, "enddate": null },
+      "unit": "iso4217:GBP",
+      "value": 276349.0,
+      "format": { "decimals": 0, "format": "numcommadot", "namespace": "ixt", "scale": 0, "sign": "" }
+    },
+    {
+      "name": "TotalAssetsLessCurrentLiabilities",
+      "schema": "core",
+      "text": "321,517",
+      "context": { "id": "E", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": "2023-08-31", "startdate": null, "enddate": null },
+      "unit": "iso4217:GBP",
+      "value": 321517.0,
+      "format": { "decimals": 0, "format": "numcommadot", "namespace": "ixt", "scale": 0, "sign": "" }
+    },
+    {
+      "name": "Creditors",
+      "schema": "core",
+      "text": "236,987",
+      "context": {
+        "id": "B_J_AU_N_AV",
+        "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+        "segments": [
+          { "tag": "explicitMember", "value": "core:Non-currentFinancialInstruments", "dimension": "core:FinancialInstrumentCurrentNon-currentDimension" },
+          { "tag": "explicitMember", "value": "core:AfterOneYear", "dimension": "core:MaturitiesOrExpirationPeriodsDimension" }
+        ],
+        "instant": "2024-08-31",
+        "startdate": null,
+        "enddate": null
+      },
+      "unit": "iso4217:GBP",
+      "value": 236987.0,
+      "format": { "decimals": 0, "format": "numcommadot", "namespace": "ixt", "scale": 0, "sign": "" }
+    },
+    {
+      "name": "Creditors",
+      "schema": "core",
+      "text": "286,468",
+      "context": {
+        "id": "E_J_AU_N_AV",
+        "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+        "segments": [
+          { "tag": "explicitMember", "value": "core:Non-currentFinancialInstruments", "dimension": "core:FinancialInstrumentCurrentNon-currentDimension" },
+          { "tag": "explicitMember", "value": "core:AfterOneYear", "dimension": "core:MaturitiesOrExpirationPeriodsDimension" }
+        ],
+        "instant": "2023-08-31",
+        "startdate": null,
+        "enddate": null
+      },
+      "unit": "iso4217:GBP",
+      "value": 286468.0,
+      "format": { "decimals": 0, "format": "numcommadot", "namespace": "ixt", "scale": 0, "sign": "" }
+    },
+    {
+      "name": "ProvisionsForLiabilitiesBalanceSheetSubtotal",
+      "schema": "core",
+      "text": "21,063",
+      "context": { "id": "B", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": "2024-08-31", "startdate": null, "enddate": null },
+      "unit": "iso4217:GBP",
+      "value": 21063.0,
+      "format": { "decimals": 0, "format": "numcommadot", "namespace": "ixt", "scale": 0, "sign": "" }
+    },
+    {
+      "name": "ProvisionsForLiabilitiesBalanceSheetSubtotal",
+      "schema": "core",
+      "text": "20,100",
+      "context": { "id": "E", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": "2023-08-31", "startdate": null, "enddate": null },
+      "unit": "iso4217:GBP",
+      "value": 20100.0,
+      "format": { "decimals": 0, "format": "numcommadot", "namespace": "ixt", "scale": 0, "sign": "" }
+    },
+    {
+      "name": "NetAssetsLiabilities",
+      "schema": "core",
+      "text": "18,299",
+      "context": { "id": "B", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": "2024-08-31", "startdate": null, "enddate": null },
+      "unit": "iso4217:GBP",
+      "value": 18299.0,
+      "format": { "decimals": 0, "format": "numcommadot", "namespace": "ixt", "scale": 0, "sign": "" }
+    },
+    {
+      "name": "NetAssetsLiabilities",
+      "schema": "core",
+      "text": "14,949",
+      "context": { "id": "E", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": "2023-08-31", "startdate": null, "enddate": null },
+      "unit": "iso4217:GBP",
+      "value": 14949.0,
+      "format": { "decimals": 0, "format": "numcommadot", "namespace": "ixt", "scale": 0, "sign": "" }
+    },
+    {
+      "name": "Equity",
+      "schema": "core",
+      "text": "100",
+      "context": {
+        "id": "B_AW_AX",
+        "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+        "segments": [{ "tag": "explicitMember", "value": "core:ShareCapital", "dimension": "core:EquityClassesDimension" }],
+        "instant": "2024-08-31",
+        "startdate": null,
+        "enddate": null
+      },
+      "unit": "iso4217:GBP",
+      "value": 100.0,
+      "format": { "decimals": 0, "format": null, "namespace": null, "scale": 0, "sign": "" }
+    },
+    {
+      "name": "Equity",
+      "schema": "core",
+      "text": "100",
+      "context": {
+        "id": "E_AW_AX",
+        "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+        "segments": [{ "tag": "explicitMember", "value": "core:ShareCapital", "dimension": "core:EquityClassesDimension" }],
+        "instant": "2023-08-31",
+        "startdate": null,
+        "enddate": null
+      },
+      "unit": "iso4217:GBP",
+      "value": 100.0,
+      "format": { "decimals": 0, "format": null, "namespace": null, "scale": 0, "sign": "" }
+    },
+    {
+      "name": "Equity",
+      "schema": "core",
+      "text": "62,888",
+      "context": {
+        "id": "B_AW_AY",
+        "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+        "segments": [{ "tag": "explicitMember", "value": "core:RevaluationReserve", "dimension": "core:EquityClassesDimension" }],
+        "instant": "2024-08-31",
+        "startdate": null,
+        "enddate": null
+      },
+      "unit": "iso4217:GBP",
+      "value": 62888.0,
+      "format": { "decimals": 0, "format": "numcommadot", "namespace": "ixt", "scale": 0, "sign": "" }
+    },
+    {
+      "name": "Equity",
+      "schema": "core",
+      "text": "60,000",
+      "context": {
+        "id": "E_AW_AY",
+        "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+        "segments": [{ "tag": "explicitMember", "value": "core:RevaluationReserve", "dimension": "core:EquityClassesDimension" }],
+        "instant": "2023-08-31",
+        "startdate": null,
+        "enddate": null
+      },
+      "unit": "iso4217:GBP",
+      "value": 60000.0,
+      "format": { "decimals": 0, "format": "numcommadot", "namespace": "ixt", "scale": 0, "sign": "" }
+    },
+    {
+      "name": "Equity",
+      "schema": "core",
+      "text": "44,689",
+      "context": {
+        "id": "B_AW_AZ",
+        "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+        "segments": [{ "tag": "explicitMember", "value": "core:RetainedEarningsAccumulatedLosses", "dimension": "core:EquityClassesDimension" }],
+        "instant": "2024-08-31",
+        "startdate": null,
+        "enddate": null
+      },
+      "unit": "iso4217:GBP",
+      "value": -44689.0,
+      "format": { "decimals": 0, "format": "numcommadot", "namespace": "ixt", "scale": 0, "sign": "-" }
+    },
+    {
+      "name": "Equity",
+      "schema": "core",
+      "text": "45,151",
+      "context": {
+        "id": "E_AW_AZ",
+        "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+        "segments": [{ "tag": "explicitMember", "value": "core:RetainedEarningsAccumulatedLosses", "dimension": "core:EquityClassesDimension" }],
+        "instant": "2023-08-31",
+        "startdate": null,
+        "enddate": null
+      },
+      "unit": "iso4217:GBP",
+      "value": -45151.0,
+      "format": { "decimals": 0, "format": "numcommadot", "namespace": "ixt", "scale": 0, "sign": "-" }
+    },
+    {
+      "name": "Equity",
+      "schema": "core",
+      "text": "18,299",
+      "context": { "id": "B", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": "2024-08-31", "startdate": null, "enddate": null },
+      "unit": "iso4217:GBP",
+      "value": 18299.0,
+      "format": { "decimals": 0, "format": "numcommadot", "namespace": "ixt", "scale": 0, "sign": "" }
+    },
+    {
+      "name": "Equity",
+      "schema": "core",
+      "text": "14,949",
+      "context": { "id": "E", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": "2023-08-31", "startdate": null, "enddate": null },
+      "unit": "iso4217:GBP",
+      "value": 14949.0,
+      "format": { "decimals": 0, "format": "numcommadot", "namespace": "ixt", "scale": 0, "sign": "" }
+    },
+    {
+      "name": "AverageNumberEmployeesDuringPeriod",
+      "schema": "core",
+      "text": "1",
+      "context": { "id": "C", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": null, "startdate": "2023-09-01", "enddate": "2024-08-31" },
+      "unit": "xbrli:pure",
+      "value": 1.0,
+      "format": { "decimals": null, "format": null, "namespace": null, "scale": 0, "sign": "" }
+    },
+    {
+      "name": "AverageNumberEmployeesDuringPeriod",
+      "schema": "core",
+      "text": "1",
+      "context": { "id": "F", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": null, "startdate": "2022-09-01", "enddate": "2023-08-31" },
+      "unit": "xbrli:pure",
+      "value": 1.0,
+      "format": { "decimals": null, "format": null, "namespace": null, "scale": 0, "sign": "" }
+    },
+    {
+      "name": "PropertyPlantEquipmentGrossCost",
+      "schema": "core",
+      "text": "535",
+      "context": {
+        "id": "A_A_BK",
+        "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+        "segments": [{ "tag": "explicitMember", "value": "core:OtherPropertyPlantEquipment", "dimension": "core:PropertyPlantEquipmentClassesDimension" }],
+        "instant": "2023-08-31",
+        "startdate": null,
+        "enddate": null
+      },
+      "unit": "iso4217:GBP",
+      "value": 535.0,
+      "format": { "decimals": 0, "format": null, "namespace": null, "scale": 0, "sign": "" }
+    },
+    {
+      "name": "TotalAdditionsIncludingFromBusinessCombinationsPropertyPlantEquipment",
+      "schema": "core",
+      "text": "381",
+      "context": {
+        "id": "C_A_BK",
+        "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+        "segments": [{ "tag": "explicitMember", "value": "core:OtherPropertyPlantEquipment", "dimension": "core:PropertyPlantEquipmentClassesDimension" }],
+        "instant": null,
+        "startdate": "2023-09-01",
+        "enddate": "2024-08-31"
+      },
+      "unit": "iso4217:GBP",
+      "value": 381.0,
+      "format": { "decimals": 0, "format": null, "namespace": null, "scale": 0, "sign": "" }
+    },
+    {
+      "name": "PropertyPlantEquipmentGrossCost",
+      "schema": "core",
+      "text": "916",
+      "context": {
+        "id": "B_A_BK",
+        "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+        "segments": [{ "tag": "explicitMember", "value": "core:OtherPropertyPlantEquipment", "dimension": "core:PropertyPlantEquipmentClassesDimension" }],
+        "instant": "2024-08-31",
+        "startdate": null,
+        "enddate": null
+      },
+      "unit": "iso4217:GBP",
+      "value": 916.0,
+      "format": { "decimals": 0, "format": null, "namespace": null, "scale": 0, "sign": "" }
+    },
+    {
+      "name": "AccumulatedDepreciationImpairmentPropertyPlantEquipment",
+      "schema": "core",
+      "text": "227",
+      "context": {
+        "id": "A_A_BK",
+        "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+        "segments": [{ "tag": "explicitMember", "value": "core:OtherPropertyPlantEquipment", "dimension": "core:PropertyPlantEquipmentClassesDimension" }],
+        "instant": "2023-08-31",
+        "startdate": null,
+        "enddate": null
+      },
+      "unit": "iso4217:GBP",
+      "value": 227.0,
+      "format": { "decimals": 0, "format": null, "namespace": null, "scale": 0, "sign": "" }
+    },
+    {
+      "name": "IncreaseFromDepreciationChargeForYearPropertyPlantEquipment",
+      "schema": "core",
+      "text": "141",
+      "context": {
+        "id": "C_A_BK",
+        "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+        "segments": [{ "tag": "explicitMember", "value": "core:OtherPropertyPlantEquipment", "dimension": "core:PropertyPlantEquipmentClassesDimension" }],
+        "instant": null,
+        "startdate": "2023-09-01",
+        "enddate": "2024-08-31"
+      },
+      "unit": "iso4217:GBP",
+      "value": 141.0,
+      "format": { "decimals": 0, "format": null, "namespace": null, "scale": 0, "sign": "" }
+    },
+    {
+      "name": "AccumulatedDepreciationImpairmentPropertyPlantEquipment",
+      "schema": "core",
+      "text": "368",
+      "context": {
+        "id": "B_A_BK",
+        "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+        "segments": [{ "tag": "explicitMember", "value": "core:OtherPropertyPlantEquipment", "dimension": "core:PropertyPlantEquipmentClassesDimension" }],
+        "instant": "2024-08-31",
+        "startdate": null,
+        "enddate": null
+      },
+      "unit": "iso4217:GBP",
+      "value": 368.0,
+      "format": { "decimals": 0, "format": null, "namespace": null, "scale": 0, "sign": "" }
+    },
+    {
+      "name": "PropertyPlantEquipment",
+      "schema": "core",
+      "text": "548",
+      "context": {
+        "id": "B_A_BK",
+        "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+        "segments": [{ "tag": "explicitMember", "value": "core:OtherPropertyPlantEquipment", "dimension": "core:PropertyPlantEquipmentClassesDimension" }],
+        "instant": "2024-08-31",
+        "startdate": null,
+        "enddate": null
+      },
+      "unit": "iso4217:GBP",
+      "value": 548.0,
+      "format": { "decimals": 0, "format": null, "namespace": null, "scale": 0, "sign": "" }
+    },
+    {
+      "name": "PropertyPlantEquipment",
+      "schema": "core",
+      "text": "308",
+      "context": {
+        "id": "E_A_BK",
+        "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+        "segments": [{ "tag": "explicitMember", "value": "core:OtherPropertyPlantEquipment", "dimension": "core:PropertyPlantEquipmentClassesDimension" }],
+        "instant": "2023-08-31",
+        "startdate": null,
+        "enddate": null
+      },
+      "unit": "iso4217:GBP",
+      "value": 308.0,
+      "format": { "decimals": 0, "format": null, "namespace": null, "scale": 0, "sign": "" }
+    },
+    {
+      "name": "InvestmentPropertyFairValueModel",
+      "schema": "core",
+      "text": "372,872",
+      "context": { "id": "A", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": "2023-08-31", "startdate": null, "enddate": null },
+      "unit": "iso4217:GBP",
+      "value": 372872.0,
+      "format": { "decimals": 0, "format": "numcommadot", "namespace": "ixt", "scale": 0, "sign": "" }
+    },
+    {
+      "name": "IncreaseDecreaseFromFairValueAdjustmentInvestmentPropertyFairValueModel",
+      "schema": "core",
+      "text": "3,850",
+      "context": { "id": "C", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": null, "startdate": "2023-09-01", "enddate": "2024-08-31" },
+      "unit": "iso4217:GBP",
+      "value": 3850.0,
+      "format": { "decimals": 0, "format": "numcommadot", "namespace": "ixt", "scale": 0, "sign": "" }
+    },
+    {
+      "name": "InvestmentPropertyFairValueModel",
+      "schema": "core",
+      "text": "376,722",
+      "context": { "id": "B", "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" }, "segments": [], "instant": "2024-08-31", "startdate": null, "enddate": null },
+      "unit": "iso4217:GBP",
+      "value": 376722.0,
+      "format": { "decimals": 0, "format": "numcommadot", "namespace": "ixt", "scale": 0, "sign": "" }
+    },
+    {
+      "name": "OtherDebtors",
+      "schema": "core",
+      "text": "1,102",
+      "context": {
+        "id": "B_N_AT",
+        "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+        "segments": [{ "tag": "explicitMember", "value": "core:WithinOneYear", "dimension": "core:MaturitiesOrExpirationPeriodsDimension" }],
+        "instant": "2024-08-31",
+        "startdate": null,
+        "enddate": null
+      },
+      "unit": "iso4217:GBP",
+      "value": 1102.0,
+      "format": { "decimals": 0, "format": "numcommadot", "namespace": "ixt", "scale": 0, "sign": "" }
+    },
+    {
+      "name": "OtherDebtors",
+      "schema": "core",
+      "text": "1,052",
+      "context": {
+        "id": "E_N_AT",
+        "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+        "segments": [{ "tag": "explicitMember", "value": "core:WithinOneYear", "dimension": "core:MaturitiesOrExpirationPeriodsDimension" }],
+        "instant": "2023-08-31",
+        "startdate": null,
+        "enddate": null
+      },
+      "unit": "iso4217:GBP",
+      "value": 1052.0,
+      "format": { "decimals": 0, "format": "numcommadot", "namespace": "ixt", "scale": 0, "sign": "" }
+    },
+    {
+      "name": "OtherCreditors",
+      "schema": "core",
+      "text": "104,826",
+      "context": {
+        "id": "B_J_AS",
+        "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+        "segments": [{ "tag": "explicitMember", "value": "core:CurrentFinancialInstruments", "dimension": "core:FinancialInstrumentCurrentNon-currentDimension" }],
+        "instant": "2024-08-31",
+        "startdate": null,
+        "enddate": null
+      },
+      "unit": "iso4217:GBP",
+      "value": 104826.0,
+      "format": { "decimals": 0, "format": "numcommadot", "namespace": "ixt", "scale": 0, "sign": "" }
+    },
+    {
+      "name": "OtherCreditors",
+      "schema": "core",
+      "text": "55,644",
+      "context": {
+        "id": "E_J_AS",
+        "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+        "segments": [{ "tag": "explicitMember", "value": "core:CurrentFinancialInstruments", "dimension": "core:FinancialInstrumentCurrentNon-currentDimension" }],
+        "instant": "2023-08-31",
+        "startdate": null,
+        "enddate": null
+      },
+      "unit": "iso4217:GBP",
+      "value": 55644.0,
+      "format": { "decimals": 0, "format": "numcommadot", "namespace": "ixt", "scale": 0, "sign": "" }
+    },
+    {
+      "name": "BankBorrowingsOverdrafts",
+      "schema": "core",
+      "text": "236,987",
+      "context": {
+        "id": "B_J_AU",
+        "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+        "segments": [{ "tag": "explicitMember", "value": "core:Non-currentFinancialInstruments", "dimension": "core:FinancialInstrumentCurrentNon-currentDimension" }],
+        "instant": "2024-08-31",
+        "startdate": null,
+        "enddate": null
+      },
+      "unit": "iso4217:GBP",
+      "value": 236987.0,
+      "format": { "decimals": 0, "format": "numcommadot", "namespace": "ixt", "scale": 0, "sign": "" }
+    },
+    {
+      "name": "BankBorrowingsOverdrafts",
+      "schema": "core",
+      "text": "286,468",
+      "context": {
+        "id": "E_J_AU",
+        "entity": { "scheme": "http://www.companieshouse.gov.uk/", "identifier": "SC606050" },
+        "segments": [{ "tag": "explicitMember", "value": "core:Non-currentFinancialInstruments", "dimension": "core:FinancialInstrumentCurrentNon-currentDimension" }],
+        "instant": "2023-08-31",
+        "startdate": null,
+        "enddate": null
+      },
+      "unit": "iso4217:GBP",
+      "value": 286468.0,
+      "format": { "decimals": 0, "format": "numcommadot", "namespace": "ixt", "scale": 0, "sign": "" }
+    }
+  ],
+  "errors": 0
+}
