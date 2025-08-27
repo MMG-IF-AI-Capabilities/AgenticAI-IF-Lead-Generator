@@ -48,18 +48,25 @@ def filter_mortgages_ch_csv(input_file_path):
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
 
-def execute_ch_request(method, url, headers = None, API_KEY = '5fdfb592-4c05-4157-98fe-01b6ae111b40'):
+def execute_ch_request(method, url, headers = None, query_params = None, API_KEY = '5fdfb592-4c05-4157-98fe-01b6ae111b40'):
     if method == 'get':
-        response = requests.get(url, auth=(API_KEY, ''), headers=headers)
+        response = requests.get(url, auth=(API_KEY, ''), headers=headers, params=query_params)
         return response
     
-def get_ch_filing_history(company_num):
+def get_ch_filing_history(company_num, company_name):
     url = f'https://api.company-information.service.gov.uk/company/{company_num}/filing-history'
-    response = execute_ch_request('get', url)
+    query_params={"category": "accounts"}
+    response = execute_ch_request('get', url, query_params=query_params)
+    print(f'Filing History - {json.dumps(response.json(),indent=2)}')
     if response.json()["filing_history_status"] == 'filing-history-available':
-        TOT_FINANCIAL_CT = 3
+        TOT_FINANCIAL_CT = 1
         read_financial_ct = 0
         financials = []
+        doc_file_path = os.path.join("output","fin_reports",f'{company_num} - {company_name}')
+        if not os.path.exists(doc_file_path):
+            print(f"Creating folder - {doc_file_path}")
+            os.makedirs(doc_file_path)
+
         for item in response.json()["items"]:
             if item['category'] == 'accounts' and read_financial_ct < TOT_FINANCIAL_CT:
                 # print(f'{company_num} - Item Date - {item['date']} - Item Made Up Date - {item['description_values']['made_up_date']}')
@@ -67,113 +74,13 @@ def get_ch_filing_history(company_num):
                 if 'application/xhtml+xml' in doc_metadata_response.json()['resources'].keys():
                     headers = {"Accept": "application/xhtml+xml"}
                     doc_response = execute_ch_request('get', doc_metadata_response.json()["links"]["document"], headers=headers)
-                    if doc_response.status_code == 200:
-                        financial_doc = IXBRL(io.StringIO(doc_response.text))
-                        # for ctx in financial_doc.contexts.items():
-                            # print(ctx[1].to_json())
-                        # print(json.dumps(financial_doc.to_json(), indent=2))
-                        # with open(os.path.join('output',f'Sample-iXBRL.json'), 'w') as outfile:
-                        #     json.dump(financial_doc.to_json(), outfile)
-                        
-
-                        # 2. DEFINE TAG MAPPING
-                        TAG_MAP = {
-                            "revenue": ["Revenue", "Turnover"],
-                            "net_profit": ["ProfitLoss"],
-                            "fixed_assets": ["FixedAssets"],
-                            "current_assets": ["CurrentAssets"],
-                            "current_liabilities": ["Creditors"],
-                            "total_liabilities": ["Liabilities"],
-                            "shareholder_funds": ["Equity", "NetAssetsLiabilities"],
-                        }
-
-                        # 3. IDENTIFY REPORTING DATES
-                        # Find the two most recent 'instant' dates to identify current and prior year contexts
-                        dates = {}
-                        for ctx in financial_doc.contexts.values():
-                            if ctx.instant:
-                                dates[ctx.id] = ctx.instant
-                        
-                        if len(dates) < 2:
-                            raise ValueError("Could not find at least two distinct reporting dates in the file.")
-
-                        sorted_contexts = sorted(dates.items(), key=lambda item: item[1], reverse=True)
-                        current_year_date_str = sorted_contexts[0][1].strftime('%Y-%m-%d')
-                        prior_year_date_str = sorted_contexts[1][1].strftime('%Y-%m-%d')
-
-                        print(f"Current Year End: {current_year_date_str}")
-                        print(f"Prior Year End: {prior_year_date_str}\n")
-                        
-                        # 4. INITIALIZE RESULTS DICTIONARY
-                        results = {
-                            current_year_date_str: {},
-                            prior_year_date_str: {}
-                        }
-
-                        # 5. ITERATE AND EXTRACT NUMERIC FACTS
-                        for fact in financial_doc.numeric:
-                            # Determine which data point this fact represents
-                            metric_name = None
-                            for name, tags in TAG_MAP.items():
-                                if fact.name in tags:
-                                    metric_name = name
-                                    break
-                            
-                            if not metric_name:
-                                continue
-
-                            # Determine the date for the fact from its context
-                            fact_date = fact.context.instant
-                            if not fact_date:
-                                # Skip duration-based facts for this simple example
-                                continue
-
-                            fact_date_str = fact_date.strftime('%Y-%m-%d')
-                            
-                            # Special handling for current liabilities (check context segments)
-                            if metric_name == "current_liabilities":
-                                is_current = any(
-                                    'WithinOneYear' in (seg.value or '') for seg in fact.context.segments
-                                )
-                                if not is_current:
-                                    continue # This is not a current liability
-
-                            # Store the value in the correct year
-                            if fact_date_str in results:
-                                results[fact_date_str][metric_name] = fact.value
-                        
-                        # 6. CALCULATE DERIVED METRICS
-                        for year, data in results.items():
-                            if "fixed_assets" in data and "current_assets" in data:
-                                data["total_assets"] = data["fixed_assets"] + data["current_assets"]
-                            # Note: 'total_liabilities' might be tagged directly or may need calculation.
-                            # This script assumes it might be tagged directly.
-
-                        # 7. DISPLAY RESULTS
-                        print("--- Financial Data Extracted ---")
-                        header = f"{'Metric':<25} | {'Value for ' + current_year_date_str:<20} | {'Value for ' + prior_year_date_str:<20}"
-                        print(header)
-                        print("-" * len(header))
-
-                        display_order = [
-                            "revenue", "net_profit", "fixed_assets", "current_assets", 
-                            "total_assets", "current_liabilities", "total_liabilities", "shareholder_funds"
-                        ]
-
-                        for metric in display_order:
-                            current_val = results.get(current_year_date_str, {}).get(metric, 'N/A')
-                            prior_val = results.get(prior_year_date_str, {}).get(metric, 'N/A')
-                            
-                            # Format for display
-                            current_disp = f"£{current_val:19,.2f}" if isinstance(current_val, (int, float)) else 'Not Found'
-                            prior_disp = f"£{prior_val:19,.2f}" if isinstance(prior_val, (int, float)) else 'Not Found'
-
-                            print(f"{metric.replace('_', ' ').title():<25} | {current_disp:<20} | {prior_disp:<20}")
-
-
-
-
-                        # financials.append(financial_doc)
+                    doc_file_name = os.path.join(doc_file_path, f'{item['date']} - {item['description']}.html')
+                    with open(doc_file_name, 'wb') as doc_outfile:
+                        print(f'Streaming file - {item['date']} - {item['description']}.html')
+                        for chunk in doc_response.iter_content(chunk_size=128):
+                            doc_outfile.write(chunk)
+                        print(f'Completed streaming file - {item['date']} - {item['description']}.html')
+                        financials.append(doc_file_name)
                 read_financial_ct += 1
         
         return financials
@@ -185,6 +92,6 @@ if __name__ == '__main__':
 
     if company_list is not None and isinstance(company_list, list):
         for company in company_list:
-            company['financials'] = get_ch_filing_history(company['companyNumber'])
+            company['financials'] = get_ch_filing_history(company['companyNumber'], company['companyName'])
 
     print(json.dumps(company_list, indent=2))
