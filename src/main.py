@@ -3,10 +3,11 @@ import csv
 import json
 import requests
 import io
+import openai
 from ixbrlparse import IXBRL
 
 def filter_mortgages_ch_csv(input_file_path):
-    OUTPUT_COMPANY_CT = 1
+    OUTPUT_COMPANY_CT = 5
     print(f'Starting CSV file parsing from {input_file_path}...')
     try:
         with open(input_file_path, 'r', newline='', encoding='utf-8') as infile:
@@ -57,9 +58,9 @@ def get_ch_filing_history(company_num, company_name):
     url = f'https://api.company-information.service.gov.uk/company/{company_num}/filing-history'
     query_params={"category": "accounts"}
     response = execute_ch_request('get', url, query_params=query_params)
-    print(f'Filing History - {json.dumps(response.json(),indent=2)}')
+    # print(f'Filing History - {json.dumps(response.json(),indent=2)}')
     if response.json()["filing_history_status"] == 'filing-history-available':
-        TOT_FINANCIAL_CT = 1
+        TOT_FINANCIAL_CT = 3
         read_financial_ct = 0
         financials = []
         doc_file_path = os.path.join("output","fin_reports",f'{company_num} - {company_name}')
@@ -82,9 +83,24 @@ def get_ch_filing_history(company_num, company_name):
                         print(f'Completed streaming file - {item['date']} - {item['description']}.html')
                         financials.append(doc_file_name)
                 read_financial_ct += 1
-        
+        # if read_financial_ct < TOT_FINANCIAL_CT:      #gather more items if read ct is less than required limit
+        #     pass
         return financials
-                    
+
+def parse_iXBRL(company):
+    for path in company['financials']:
+        print(f"Opening file - {path}")
+        with open(path, 'r', encoding='utf-8') as fin_report:
+            report = IXBRL(fin_report)
+            # for key in report.contexts.keys():
+            #     print(f'{key} - Data - {report.contexts[key].to_json()}')
+            for fact in report.numeric:
+                fact_obj = fact.to_json()
+                print(f"Fact Name - {fact_obj['name']} - Value - {fact_obj['value']} -- Context - Id - {fact_obj['context']['id']} - {f"Instant Date - {fact_obj['context']['instant']}" if fact_obj['context']['instant'] is not None else f"Start Date - {fact_obj['context']['startdate']} - End Date - {fact_obj['context']['enddate']}"}")
+                # print(json.dumps(fact_obj, indent=2))
+
+def get_working_capital_eligibilty(company):
+    pass
 
 if __name__ == '__main__':
     CH_CSV_INPUT = os.path.join('resources', 'small_companies_list.csv')
@@ -94,4 +110,7 @@ if __name__ == '__main__':
         for company in company_list:
             company['financials'] = get_ch_filing_history(company['companyNumber'], company['companyName'])
 
-    print(json.dumps(company_list, indent=2))
+    # print(json.dumps(company_list, indent=2))
+
+    for company in company_list:
+        parse_iXBRL(company)
