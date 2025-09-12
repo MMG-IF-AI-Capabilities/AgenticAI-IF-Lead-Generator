@@ -115,7 +115,7 @@ def parse_iXBRL(path):
     return fin_obj
             
 def get_working_capital_eligibilty(company_data):
-    os.environ["GOOGLE_API_KEY"] = "AIzaSyAVe_KrmZLN6UI3C_k1l6mDiOwbsgO14cE"
+    os.environ["GOOGLE_API_KEY"] = ""
     llm = ChatGoogleGenerativeAI(model = "gemini-1.5-flash", temperature=0)
 
     analysis_prompt = PromptTemplate(
