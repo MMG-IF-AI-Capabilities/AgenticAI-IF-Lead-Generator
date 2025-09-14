@@ -50,7 +50,7 @@ def fetch_emails_from_hunter(domain):
     return None
 
 
-def enrich_companies(file_path="companies.csv"):
+def enrich_companies(file_path="qualified_company_list.csv"):
     """Enrich CSV with Apollo + Hunter data"""
     updated_rows = []
     with open(file_path, "r", newline="", encoding="utf-8") as infile:
@@ -60,7 +60,7 @@ def enrich_companies(file_path="companies.csv"):
             fieldnames += ["domain", "phone", "emails", "response"]
 
         for row in reader:
-            company_name = row.get("company_name") or row.get("name") or list(row.values())[0]
+            company_name = row.get("companyName") or row.get("name") or list(row.values())[0]
             details = fetch_company_details(company_name)
             if details:
                 row["domain"] = details.get("domain")
