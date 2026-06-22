@@ -1,0 +1,258 @@
+{
+  "companyNumber": "13310195",
+  "companyName": " TRIPLE D PROPERTIES LIMITED",
+  "companyCategory": "Private Limited Company",
+  "companyStatus": "Active",
+  "numMortCharges": "1",
+  "numMortOutstanding": "1",
+  "numMortPartSatisfied": "0",
+  "numMortSatisfied": "0",
+  "chUrl": "http://business.data.gov.uk/id/company/13310195",
+  "financials": [
+    {
+      "fact_name": "CalledUpShareCapitalNotPaidNotExpressedAsCurrentAsset",
+      "fact_value": 2.0,
+      "instant_date": "2024-04-30"
+    },
+    {
+      "fact_name": "CalledUpShareCapitalNotPaidNotExpressedAsCurrentAsset",
+      "fact_value": 2.0,
+      "instant_date": "2023-04-30"
+    },
+    {
+      "fact_name": "InvestmentProperty",
+      "fact_value": 80453.0,
+      "instant_date": "2024-04-30"
+    },
+    {
+      "fact_name": "InvestmentProperty",
+      "fact_value": 80453.0,
+      "instant_date": "2023-04-30"
+    },
+    {
+      "fact_name": "CashBankOnHand",
+      "fact_value": 9268.0,
+      "instant_date": "2024-04-30"
+    },
+    {
+      "fact_name": "CashBankOnHand",
+      "fact_value": 44985.0,
+      "instant_date": "2023-04-30"
+    },
+    {
+      "fact_name": "Creditors",
+      "fact_value": 13001.0,
+      "instant_date": "2024-04-30"
+    },
+    {
+      "fact_name": "Creditors",
+      "fact_value": 51115.0,
+      "instant_date": "2023-04-30"
+    },
+    {
+      "fact_name": "NetCurrentAssetsLiabilities",
+      "fact_value": -3733.0,
+      "instant_date": "2024-04-30"
+    },
+    {
+      "fact_name": "NetCurrentAssetsLiabilities",
+      "fact_value": -6130.0,
+      "instant_date": "2023-04-30"
+    },
+    {
+      "fact_name": "TotalAssetsLessCurrentLiabilities",
+      "fact_value": 76722.0,
+      "instant_date": "2024-04-30"
+    },
+    {
+      "fact_name": "TotalAssetsLessCurrentLiabilities",
+      "fact_value": 74325.0,
+      "instant_date": "2023-04-30"
+    },
+    {
+      "fact_name": "Creditors",
+      "fact_value": 75964.0,
+      "instant_date": "2024-04-30"
+    },
+    {
+      "fact_name": "Creditors",
+      "fact_value": 75791.0,
+      "instant_date": "2023-04-30"
+    },
+    {
+      "fact_name": "NetAssetsLiabilities",
+      "fact_value": 758.0,
+      "instant_date": "2024-04-30"
+    },
+    {
+      "fact_name": "NetAssetsLiabilities",
+      "fact_value": -1466.0,
+      "instant_date": "2023-04-30"
+    },
+    {
+      "fact_name": "Equity",
+      "fact_value": 2.0,
+      "instant_date": "2024-04-30"
+    },
+    {
+      "fact_name": "Equity",
+      "fact_value": 2.0,
+      "instant_date": "2023-04-30"
+    },
+    {
+      "fact_name": "Equity",
+      "fact_value": 756.0,
+      "instant_date": "2024-04-30"
+    },
+    {
+      "fact_name": "Equity",
+      "fact_value": -1468.0,
+      "instant_date": "2023-04-30"
+    },
+    {
+      "fact_name": "Equity",
+      "fact_value": 758.0,
+      "instant_date": "2024-04-30"
+    },
+    {
+      "fact_name": "Equity",
+      "fact_value": -1466.0,
+      "instant_date": "2023-04-30"
+    },
+    {
+      "fact_name": "AverageNumberEmployeesDuringPeriod",
+      "fact_value": 0.0,
+      "start_date": "2023-05-01",
+      "end_date": "2024-04-30"
+    },
+    {
+      "fact_name": "AverageNumberEmployeesDuringPeriod",
+      "fact_value": 0.0,
+      "start_date": "2022-05-01",
+      "end_date": "2023-04-30"
+    },
+    {
+      "fact_name": "CalledUpShareCapitalNotPaidNotExpressedAsCurrentAsset",
+      "fact_value": 2.0,
+      "instant_date": "2023-04-30"
+    },
+    {
+      "fact_name": "CalledUpShareCapitalNotPaidNotExpressedAsCurrentAsset",
+      "fact_value": 2.0,
+      "instant_date": "2022-04-30"
+    },
+    {
+      "fact_name": "CashBankOnHand",
+      "fact_value": 44985.0,
+      "instant_date": "2023-04-30"
+    },
+    {
+      "fact_name": "CashBankOnHand",
+      "fact_value": 1692.0,
+      "instant_date": "2022-04-30"
+    },
+    {
+      "fact_name": "Creditors",
+      "fact_value": 45662.0,
+      "instant_date": "2023-04-30"
+    },
+    {
+      "fact_name": "Creditors",
+      "fact_value": 3864.0,
+      "instant_date": "2022-04-30"
+    },
+    {
+      "fact_name": "NetCurrentAssetsLiabilities",
+      "fact_value": -677.0,
+      "instant_date": "2023-04-30"
+    },
+    {
+      "fact_name": "NetCurrentAssetsLiabilities",
+      "fact_value": -2172.0,
+      "instant_date": "2022-04-30"
+    },
+    {
+      "fact_name": "NetAssetsLiabilities",
+      "fact_value": -675.0,
+      "instant_date": "2023-04-30"
+    },
+    {
+      "fact_name": "NetAssetsLiabilities",
+      "fact_value": -2170.0,
+      "instant_date": "2022-04-30"
+    },
+    {
+      "fact_name": "Equity",
+      "fact_value": 2.0,
+      "instant_date": "2023-04-30"
+    },
+    {
+      "fact_name": "Equity",
+      "fact_value": 2.0,
+      "instant_date": "2022-04-30"
+    },
+    {
+      "fact_name": "Equity",
+      "fact_value": -677.0,
+      "instant_date": "2023-04-30"
+    },
+    {
+      "fact_name": "Equity",
+      "fact_value": -2172.0,
+      "instant_date": "2022-04-30"
+    },
+    {
+      "fact_name": "Equity",
+      "fact_value": -675.0,
+      "instant_date": "2023-04-30"
+    },
+    {
+      "fact_name": "Equity",
+      "fact_value": -2170.0,
+      "instant_date": "2022-04-30"
+    },
+    {
+      "fact_name": "CalledUpShareCapitalNotPaidNotExpressedAsCurrentAsset",
+      "fact_value": 2.0,
+      "instant_date": "2022-04-30"
+    },
+    {
+      "fact_name": "CashBankOnHand",
+      "fact_value": 1692.0,
+      "instant_date": "2022-04-30"
+    },
+    {
+      "fact_name": "Creditors",
+      "fact_value": 3864.0,
+      "instant_date": "2022-04-30"
+    },
+    {
+      "fact_name": "NetCurrentAssetsLiabilities",
+      "fact_value": -2172.0,
+      "instant_date": "2022-04-30"
+    },
+    {
+      "fact_name": "NetAssetsLiabilities",
+      "fact_value": -2170.0,
+      "instant_date": "2022-04-30"
+    },
+    {
+      "fact_name": "Equity",
+      "fact_value": 2.0,
+      "instant_date": "2022-04-30"
+    },
+    {
+      "fact_name": "Equity",
+      "fact_value": -2172.0,
+      "instant_date": "2022-04-30"
+    },
+    {
+      "fact_name": "Equity",
+      "fact_value": -2170.0,
+      "instant_date": "2022-04-30"
+    }
+  ],
+  "cfps_score": 7,
+  "qualitative_narrative": "TRIPLE D PROPERTIES LIMITED shows signs of increasing cash flow pressure. While revenue data is unavailable, the company's cash reserves have significantly decreased from \u00a344,985 in 2023 to \u00a39,268 in 2024, and the net current assets/liabilities remain negative, indicating a potential need for improved working capital management.",
+  "final_qualification": "QUALIFIED"
+}

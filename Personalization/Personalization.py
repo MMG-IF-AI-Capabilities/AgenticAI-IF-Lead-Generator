@@ -7,7 +7,7 @@ load_dotenv()
 
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
-def query_gemini(prompt: str, model: str = "gemini-1.5-flash") -> str:
+def query_gemini(prompt: str, model: str = "gemini-2.0-flash") -> str:
     model_instance = genai.GenerativeModel(model)
     response = model_instance.generate_content(prompt)
     return response.text.strip() if response and response.text else "No response."
@@ -28,6 +28,9 @@ def generate_if_pitch(financials: dict) -> str:
     - Provide step-by-step information on how the service works, avoiding technical jargon.
     - Keep the tone professional, empathetic, and supportive — as if you are a consultant offering helpful advice.
     - End the message by asking the end user if they are Interested or not to continue the conversation.
+    - please make sure the message body doesnt exceed 1500 characters.
+    - Just use Hi to greet and no name needed
+    - follow the structure strictly to make it more human centered and personalized.
 
     Structure:
     1. Begin with a brief, friendly introduction addressing the company by name.

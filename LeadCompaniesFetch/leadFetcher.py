@@ -9,7 +9,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.prompts import PromptTemplate
 
 def filter_mortgages_ch_csv(input_file_path):
-    OUTPUT_COMPANY_CT = 1
+    OUTPUT_COMPANY_CT = 2
     print(f'Starting CSV file parsing from {input_file_path}...')
     try:
         with open(input_file_path, 'r', newline='', encoding='utf-8') as infile:
@@ -115,13 +115,16 @@ def parse_iXBRL(path):
             
 def get_working_capital_eligibilty(company_data):
     os.getenv("GOOGLE_API_KEY")
-    llm = ChatGoogleGenerativeAI(model = "gemini-1.5-flash", temperature=0)
+    llm = ChatGoogleGenerativeAI(model = "gemini-2.0-flash", temperature=0)
 
     analysis_prompt = PromptTemplate(
         input_variables=["json_content"],
         template="""
                 *ROLE AND GOAL:*
-                You are an expert UK-based credit analyst specializing in SME working capital. Your goal is to analyze the provided financial statements to determine if the company is a strong candidate for an invoice discounting facility. You must identify signs of cash flow pressure caused by growth, long payment terms, or operational inefficiencies.
+                You are an expert UK-based credit analyst specializing in SME working capital. Your goal is to analyze the provided
+                  financial statements to determine if the company is a strong candidate for an
+                    invoice discounting facility. You must identify signs of cash flow pressure caused 
+                    by growth, long payment terms, or operational inefficiencies.
 
                 *CONTEXT:*
                 Invoice discounting helps businesses by advancing cash against their unpaid B2B invoices, immediately improving their working capital. Ideal candidates are B2B companies that are growing, but whose cash is tied up in accounts receivable (debtors). Key indicators of need include high or increasing debtor days, revenue growth outstripping cash reserves, and pressure on the current ratio.

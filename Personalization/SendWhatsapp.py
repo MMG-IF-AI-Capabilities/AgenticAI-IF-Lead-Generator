@@ -40,10 +40,10 @@ def send_whatsapp_message(message_body: str, receiver_number: str):
 
     if stage != 4 and response.lower() != "not interested":
         #timer that I've set for no response
-        timer = threading.Timer(120, mark_no_response, args=[phone_normalized])
+        timer = threading.Timer(600, mark_no_response, args=[phone_normalized])
         timer.start()
         pending_timers[phone_normalized] = timer
-        print(f"Sent WhatsApp message to {phone_normalized}.")
+        print(f"Sent WhatsApp message to {phone_normalized}")
     else:
         print(f"Sent WhatsApp message to {phone_normalized}. Timer not started: stage={stage} response={response}")
 

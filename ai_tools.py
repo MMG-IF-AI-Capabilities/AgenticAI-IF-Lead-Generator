@@ -13,7 +13,7 @@ from datetime import datetime
 COMPANY_CSV = "qualified_company_list.csv"
 
 llm = ChatGoogleGenerativeAI(
-    model="gemini-1.5-flash",
+    model="gemini-2.0-flash",
     temperature=0.3,
     google_api_key=os.getenv("GOOGLE_API_KEY"),
     max_output_tokens=1000, streaming=False
@@ -129,7 +129,7 @@ User details:
 - Funding type: {funding_type or "None"}
 
 Instructions:
-1. Based on the turnover and funding type, recommend the correct NatWest product using official information from these websites:
+1. Based on the turnover and funding type, recommend the correct NatWest product using official information from these websites and explain why the product suits their needs:
    - https://www.natwest.com/business/loans-and-finance/invoice-discounting.html
    - https://www.natwest.com/business/loans-and-finance/asset-based-lending.html
 2. Provide the recommendation clearly with the correct link.

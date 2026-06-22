@@ -1,0 +1,753 @@
+{
+  "companyNumber": "SC606050",
+  "companyName": "!NSPIRED INVESTMENTS LTD",
+  "companyCategory": "Private Limited Company",
+  "companyStatus": "Active",
+  "numMortCharges": "5",
+  "numMortOutstanding": "5",
+  "numMortPartSatisfied": "0",
+  "numMortSatisfied": "0",
+  "chUrl": "http://business.data.gov.uk/id/company/SC606050",
+  "financials": [
+    {
+      "fact_name": "PropertyPlantEquipment",
+      "fact_value": 548.0,
+      "instant_date": "2024-08-31"
+    },
+    {
+      "fact_name": "PropertyPlantEquipment",
+      "fact_value": 308.0,
+      "instant_date": "2023-08-31"
+    },
+    {
+      "fact_name": "InvestmentProperty",
+      "fact_value": 376722.0,
+      "instant_date": "2024-08-31"
+    },
+    {
+      "fact_name": "InvestmentProperty",
+      "fact_value": 372872.0,
+      "instant_date": "2023-08-31"
+    },
+    {
+      "fact_name": "FixedAssets",
+      "fact_value": 377270.0,
+      "instant_date": "2024-08-31"
+    },
+    {
+      "fact_name": "FixedAssets",
+      "fact_value": 373180.0,
+      "instant_date": "2023-08-31"
+    },
+    {
+      "fact_name": "Debtors",
+      "fact_value": 1102.0,
+      "instant_date": "2024-08-31"
+    },
+    {
+      "fact_name": "Debtors",
+      "fact_value": 1052.0,
+      "instant_date": "2023-08-31"
+    },
+    {
+      "fact_name": "CashBankOnHand",
+      "fact_value": 2803.0,
+      "instant_date": "2024-08-31"
+    },
+    {
+      "fact_name": "CashBankOnHand",
+      "fact_value": 2929.0,
+      "instant_date": "2023-08-31"
+    },
+    {
+      "fact_name": "CurrentAssets",
+      "fact_value": 3905.0,
+      "instant_date": "2024-08-31"
+    },
+    {
+      "fact_name": "CurrentAssets",
+      "fact_value": 3981.0,
+      "instant_date": "2023-08-31"
+    },
+    {
+      "fact_name": "Creditors",
+      "fact_value": 104826.0,
+      "instant_date": "2024-08-31"
+    },
+    {
+      "fact_name": "Creditors",
+      "fact_value": 55644.0,
+      "instant_date": "2023-08-31"
+    },
+    {
+      "fact_name": "NetCurrentAssetsLiabilities",
+      "fact_value": -100921.0,
+      "instant_date": "2024-08-31"
+    },
+    {
+      "fact_name": "NetCurrentAssetsLiabilities",
+      "fact_value": -51663.0,
+      "instant_date": "2023-08-31"
+    },
+    {
+      "fact_name": "TotalAssetsLessCurrentLiabilities",
+      "fact_value": 276349.0,
+      "instant_date": "2024-08-31"
+    },
+    {
+      "fact_name": "TotalAssetsLessCurrentLiabilities",
+      "fact_value": 321517.0,
+      "instant_date": "2023-08-31"
+    },
+    {
+      "fact_name": "Creditors",
+      "fact_value": 236987.0,
+      "instant_date": "2024-08-31"
+    },
+    {
+      "fact_name": "Creditors",
+      "fact_value": 286468.0,
+      "instant_date": "2023-08-31"
+    },
+    {
+      "fact_name": "ProvisionsForLiabilitiesBalanceSheetSubtotal",
+      "fact_value": 21063.0,
+      "instant_date": "2024-08-31"
+    },
+    {
+      "fact_name": "ProvisionsForLiabilitiesBalanceSheetSubtotal",
+      "fact_value": 20100.0,
+      "instant_date": "2023-08-31"
+    },
+    {
+      "fact_name": "NetAssetsLiabilities",
+      "fact_value": 18299.0,
+      "instant_date": "2024-08-31"
+    },
+    {
+      "fact_name": "NetAssetsLiabilities",
+      "fact_value": 14949.0,
+      "instant_date": "2023-08-31"
+    },
+    {
+      "fact_name": "Equity",
+      "fact_value": 100.0,
+      "instant_date": "2024-08-31"
+    },
+    {
+      "fact_name": "Equity",
+      "fact_value": 100.0,
+      "instant_date": "2023-08-31"
+    },
+    {
+      "fact_name": "Equity",
+      "fact_value": 62888.0,
+      "instant_date": "2024-08-31"
+    },
+    {
+      "fact_name": "Equity",
+      "fact_value": 60000.0,
+      "instant_date": "2023-08-31"
+    },
+    {
+      "fact_name": "Equity",
+      "fact_value": -44689.0,
+      "instant_date": "2024-08-31"
+    },
+    {
+      "fact_name": "Equity",
+      "fact_value": -45151.0,
+      "instant_date": "2023-08-31"
+    },
+    {
+      "fact_name": "Equity",
+      "fact_value": 18299.0,
+      "instant_date": "2024-08-31"
+    },
+    {
+      "fact_name": "Equity",
+      "fact_value": 14949.0,
+      "instant_date": "2023-08-31"
+    },
+    {
+      "fact_name": "AverageNumberEmployeesDuringPeriod",
+      "fact_value": 1.0,
+      "start_date": "2023-09-01",
+      "end_date": "2024-08-31"
+    },
+    {
+      "fact_name": "AverageNumberEmployeesDuringPeriod",
+      "fact_value": 1.0
+    },
+    {
+      "fact_name": "PropertyPlantEquipmentGrossCost",
+      "fact_value": 535.0
+    },
+    {
+      "fact_name": "TotalAdditionsIncludingFromBusinessCombinationsPropertyPlantEquipment",
+      "fact_value": 381.0
+    },
+    {
+      "fact_name": "PropertyPlantEquipmentGrossCost",
+      "fact_value": 916.0,
+      "instant_date": "2024-08-31"
+    },
+    {
+      "fact_name": "AccumulatedDepreciationImpairmentPropertyPlantEquipment",
+      "fact_value": 227.0
+    },
+    {
+      "fact_name": "IncreaseFromDepreciationChargeForYearPropertyPlantEquipment",
+      "fact_value": 141.0
+    },
+    {
+      "fact_name": "AccumulatedDepreciationImpairmentPropertyPlantEquipment",
+      "fact_value": 368.0,
+      "instant_date": "2024-08-31"
+    },
+    {
+      "fact_name": "PropertyPlantEquipment",
+      "fact_value": 548.0,
+      "instant_date": "2024-08-31"
+    },
+    {
+      "fact_name": "PropertyPlantEquipment",
+      "fact_value": 308.0,
+      "instant_date": "2023-08-31"
+    },
+    {
+      "fact_name": "InvestmentPropertyFairValueModel",
+      "fact_value": 372872.0
+    },
+    {
+      "fact_name": "IncreaseDecreaseFromFairValueAdjustmentInvestmentPropertyFairValueModel",
+      "fact_value": 3850.0,
+      "start_date": "2023-09-01",
+      "end_date": "2024-08-31"
+    },
+    {
+      "fact_name": "InvestmentPropertyFairValueModel",
+      "fact_value": 376722.0,
+      "instant_date": "2024-08-31"
+    },
+    {
+      "fact_name": "OtherDebtors",
+      "fact_value": 1102.0
+    },
+    {
+      "fact_name": "OtherDebtors",
+      "fact_value": 1052.0
+    },
+    {
+      "fact_name": "OtherCreditors",
+      "fact_value": 104826.0
+    },
+    {
+      "fact_name": "OtherCreditors",
+      "fact_value": 55644.0
+    },
+    {
+      "fact_name": "BankBorrowingsOverdrafts",
+      "fact_value": 236987.0
+    },
+    {
+      "fact_name": "BankBorrowingsOverdrafts",
+      "fact_value": 286468.0
+    },
+    {
+      "fact_name": "PropertyPlantEquipment",
+      "fact_value": 308.0,
+      "instant_date": "2023-08-31"
+    },
+    {
+      "fact_name": "PropertyPlantEquipment",
+      "fact_value": 362.0,
+      "instant_date": "2022-08-31"
+    },
+    {
+      "fact_name": "InvestmentProperty",
+      "fact_value": 372872.0,
+      "instant_date": "2023-08-31"
+    },
+    {
+      "fact_name": "InvestmentProperty",
+      "fact_value": 292872.0,
+      "instant_date": "2022-08-31"
+    },
+    {
+      "fact_name": "FixedAssets",
+      "fact_value": 373180.0,
+      "instant_date": "2023-08-31"
+    },
+    {
+      "fact_name": "FixedAssets",
+      "fact_value": 293234.0,
+      "instant_date": "2022-08-31"
+    },
+    {
+      "fact_name": "Debtors",
+      "fact_value": 1052.0,
+      "instant_date": "2023-08-31"
+    },
+    {
+      "fact_name": "Debtors",
+      "fact_value": 1664.0,
+      "instant_date": "2022-08-31"
+    },
+    {
+      "fact_name": "CashBankOnHand",
+      "fact_value": 2929.0,
+      "instant_date": "2023-08-31"
+    },
+    {
+      "fact_name": "CashBankOnHand",
+      "fact_value": 3611.0,
+      "instant_date": "2022-08-31"
+    },
+    {
+      "fact_name": "CurrentAssets",
+      "fact_value": 3981.0,
+      "instant_date": "2023-08-31"
+    },
+    {
+      "fact_name": "CurrentAssets",
+      "fact_value": 5275.0,
+      "instant_date": "2022-08-31"
+    },
+    {
+      "fact_name": "Creditors",
+      "fact_value": 55644.0,
+      "instant_date": "2023-08-31"
+    },
+    {
+      "fact_name": "Creditors",
+      "fact_value": 55423.0,
+      "instant_date": "2022-08-31"
+    },
+    {
+      "fact_name": "NetCurrentAssetsLiabilities",
+      "fact_value": -51663.0,
+      "instant_date": "2023-08-31"
+    },
+    {
+      "fact_name": "NetCurrentAssetsLiabilities",
+      "fact_value": -50148.0,
+      "instant_date": "2022-08-31"
+    },
+    {
+      "fact_name": "TotalAssetsLessCurrentLiabilities",
+      "fact_value": 321517.0,
+      "instant_date": "2023-08-31"
+    },
+    {
+      "fact_name": "TotalAssetsLessCurrentLiabilities",
+      "fact_value": 243086.0,
+      "instant_date": "2022-08-31"
+    },
+    {
+      "fact_name": "Creditors",
+      "fact_value": 286468.0,
+      "instant_date": "2023-08-31"
+    },
+    {
+      "fact_name": "Creditors",
+      "fact_value": 286468.0,
+      "instant_date": "2022-08-31"
+    },
+    {
+      "fact_name": "ProvisionsForLiabilitiesBalanceSheetSubtotal",
+      "fact_value": 20100.0,
+      "instant_date": "2023-08-31"
+    },
+    {
+      "fact_name": "ProvisionsForLiabilitiesBalanceSheetSubtotal",
+      "fact_value": 0.0,
+      "instant_date": "2022-08-31"
+    },
+    {
+      "fact_name": "NetAssetsLiabilities",
+      "fact_value": 14949.0,
+      "instant_date": "2023-08-31"
+    },
+    {
+      "fact_name": "NetAssetsLiabilities",
+      "fact_value": -43382.0,
+      "instant_date": "2022-08-31"
+    },
+    {
+      "fact_name": "Equity",
+      "fact_value": 100.0,
+      "instant_date": "2023-08-31"
+    },
+    {
+      "fact_name": "Equity",
+      "fact_value": 100.0,
+      "instant_date": "2022-08-31"
+    },
+    {
+      "fact_name": "Equity",
+      "fact_value": 60000.0,
+      "instant_date": "2023-08-31"
+    },
+    {
+      "fact_name": "Equity",
+      "fact_value": 0.0,
+      "instant_date": "2022-08-31"
+    },
+    {
+      "fact_name": "Equity",
+      "fact_value": -45151.0,
+      "instant_date": "2023-08-31"
+    },
+    {
+      "fact_name": "Equity",
+      "fact_value": -43482.0,
+      "instant_date": "2022-08-31"
+    },
+    {
+      "fact_name": "Equity",
+      "fact_value": 14949.0,
+      "instant_date": "2023-08-31"
+    },
+    {
+      "fact_name": "Equity",
+      "fact_value": -43382.0,
+      "instant_date": "2022-08-31"
+    },
+    {
+      "fact_name": "AverageNumberEmployeesDuringPeriod",
+      "fact_value": 1.0,
+      "start_date": "2022-09-01",
+      "end_date": "2023-08-31"
+    },
+    {
+      "fact_name": "AverageNumberEmployeesDuringPeriod",
+      "fact_value": 1.0
+    },
+    {
+      "fact_name": "PropertyPlantEquipmentGrossCost",
+      "fact_value": 535.0
+    },
+    {
+      "fact_name": "AccumulatedDepreciationImpairmentPropertyPlantEquipment",
+      "fact_value": 173.0
+    },
+    {
+      "fact_name": "IncreaseFromDepreciationChargeForYearPropertyPlantEquipment",
+      "fact_value": 54.0
+    },
+    {
+      "fact_name": "AccumulatedDepreciationImpairmentPropertyPlantEquipment",
+      "fact_value": 227.0,
+      "instant_date": "2023-08-31"
+    },
+    {
+      "fact_name": "PropertyPlantEquipment",
+      "fact_value": 308.0,
+      "instant_date": "2023-08-31"
+    },
+    {
+      "fact_name": "PropertyPlantEquipment",
+      "fact_value": 362.0,
+      "instant_date": "2022-08-31"
+    },
+    {
+      "fact_name": "InvestmentPropertyFairValueModel",
+      "fact_value": 292872.0
+    },
+    {
+      "fact_name": "IncreaseDecreaseFromFairValueAdjustmentInvestmentPropertyFairValueModel",
+      "fact_value": 80000.0,
+      "start_date": "2022-09-01",
+      "end_date": "2023-08-31"
+    },
+    {
+      "fact_name": "InvestmentPropertyFairValueModel",
+      "fact_value": 372872.0,
+      "instant_date": "2023-08-31"
+    },
+    {
+      "fact_name": "TradeDebtorsTradeReceivables",
+      "fact_value": 0.0
+    },
+    {
+      "fact_name": "TradeDebtorsTradeReceivables",
+      "fact_value": 525.0
+    },
+    {
+      "fact_name": "OtherDebtors",
+      "fact_value": 1052.0
+    },
+    {
+      "fact_name": "OtherDebtors",
+      "fact_value": 1139.0
+    },
+    {
+      "fact_name": "Debtors",
+      "fact_value": 1052.0,
+      "instant_date": "2023-08-31"
+    },
+    {
+      "fact_name": "Debtors",
+      "fact_value": 1664.0,
+      "instant_date": "2022-08-31"
+    },
+    {
+      "fact_name": "OtherCreditors",
+      "fact_value": 55644.0
+    },
+    {
+      "fact_name": "OtherCreditors",
+      "fact_value": 55423.0
+    },
+    {
+      "fact_name": "BankBorrowingsOverdrafts",
+      "fact_value": 286468.0
+    },
+    {
+      "fact_name": "BankBorrowingsOverdrafts",
+      "fact_value": 286468.0
+    },
+    {
+      "fact_name": "PropertyPlantEquipment",
+      "fact_value": 362.0,
+      "instant_date": "2022-08-31"
+    },
+    {
+      "fact_name": "PropertyPlantEquipment",
+      "fact_value": 426.0,
+      "instant_date": "2021-08-31"
+    },
+    {
+      "fact_name": "InvestmentProperty",
+      "fact_value": 292872.0,
+      "instant_date": "2022-08-31"
+    },
+    {
+      "fact_name": "InvestmentProperty",
+      "fact_value": 292872.0,
+      "instant_date": "2021-08-31"
+    },
+    {
+      "fact_name": "FixedAssets",
+      "fact_value": 293234.0,
+      "instant_date": "2022-08-31"
+    },
+    {
+      "fact_name": "FixedAssets",
+      "fact_value": 293298.0,
+      "instant_date": "2021-08-31"
+    },
+    {
+      "fact_name": "Debtors",
+      "fact_value": 1664.0,
+      "instant_date": "2022-08-31"
+    },
+    {
+      "fact_name": "Debtors",
+      "fact_value": 1568.0,
+      "instant_date": "2021-08-31"
+    },
+    {
+      "fact_name": "CashBankOnHand",
+      "fact_value": 3611.0,
+      "instant_date": "2022-08-31"
+    },
+    {
+      "fact_name": "CashBankOnHand",
+      "fact_value": 181424.0,
+      "instant_date": "2021-08-31"
+    },
+    {
+      "fact_name": "CurrentAssets",
+      "fact_value": 5275.0,
+      "instant_date": "2022-08-31"
+    },
+    {
+      "fact_name": "CurrentAssets",
+      "fact_value": 182992.0,
+      "instant_date": "2021-08-31"
+    },
+    {
+      "fact_name": "Creditors",
+      "fact_value": 55423.0,
+      "instant_date": "2022-08-31"
+    },
+    {
+      "fact_name": "Creditors",
+      "fact_value": 232603.0,
+      "instant_date": "2021-08-31"
+    },
+    {
+      "fact_name": "NetCurrentAssetsLiabilities",
+      "fact_value": -50148.0,
+      "instant_date": "2022-08-31"
+    },
+    {
+      "fact_name": "NetCurrentAssetsLiabilities",
+      "fact_value": -49611.0,
+      "instant_date": "2021-08-31"
+    },
+    {
+      "fact_name": "TotalAssetsLessCurrentLiabilities",
+      "fact_value": 243086.0,
+      "instant_date": "2022-08-31"
+    },
+    {
+      "fact_name": "TotalAssetsLessCurrentLiabilities",
+      "fact_value": 243687.0,
+      "instant_date": "2021-08-31"
+    },
+    {
+      "fact_name": "Creditors",
+      "fact_value": 286468.0,
+      "instant_date": "2022-08-31"
+    },
+    {
+      "fact_name": "Creditors",
+      "fact_value": 280736.0,
+      "instant_date": "2021-08-31"
+    },
+    {
+      "fact_name": "NetAssetsLiabilities",
+      "fact_value": -43382.0,
+      "instant_date": "2022-08-31"
+    },
+    {
+      "fact_name": "NetAssetsLiabilities",
+      "fact_value": -37049.0,
+      "instant_date": "2021-08-31"
+    },
+    {
+      "fact_name": "Equity",
+      "fact_value": 100.0,
+      "instant_date": "2022-08-31"
+    },
+    {
+      "fact_name": "Equity",
+      "fact_value": 100.0,
+      "instant_date": "2021-08-31"
+    },
+    {
+      "fact_name": "Equity",
+      "fact_value": -43482.0,
+      "instant_date": "2022-08-31"
+    },
+    {
+      "fact_name": "Equity",
+      "fact_value": -37149.0,
+      "instant_date": "2021-08-31"
+    },
+    {
+      "fact_name": "Equity",
+      "fact_value": -43382.0,
+      "instant_date": "2022-08-31"
+    },
+    {
+      "fact_name": "Equity",
+      "fact_value": -37049.0,
+      "instant_date": "2021-08-31"
+    },
+    {
+      "fact_name": "AverageNumberEmployeesDuringPeriod",
+      "fact_value": 1.0,
+      "start_date": "2021-09-01",
+      "end_date": "2022-08-31"
+    },
+    {
+      "fact_name": "AverageNumberEmployeesDuringPeriod",
+      "fact_value": 1.0,
+      "start_date": "2020-09-01",
+      "end_date": "2021-08-31"
+    },
+    {
+      "fact_name": "PropertyPlantEquipmentGrossCost",
+      "fact_value": 535.0,
+      "instant_date": "2021-08-31"
+    },
+    {
+      "fact_name": "AccumulatedDepreciationImpairmentPropertyPlantEquipment",
+      "fact_value": 109.0,
+      "instant_date": "2021-08-31"
+    },
+    {
+      "fact_name": "IncreaseFromDepreciationChargeForYearPropertyPlantEquipment",
+      "fact_value": 64.0,
+      "start_date": "2021-09-01",
+      "end_date": "2022-08-31"
+    },
+    {
+      "fact_name": "AccumulatedDepreciationImpairmentPropertyPlantEquipment",
+      "fact_value": 173.0,
+      "instant_date": "2022-08-31"
+    },
+    {
+      "fact_name": "PropertyPlantEquipment",
+      "fact_value": 362.0,
+      "instant_date": "2022-08-31"
+    },
+    {
+      "fact_name": "PropertyPlantEquipment",
+      "fact_value": 426.0,
+      "instant_date": "2021-08-31"
+    },
+    {
+      "fact_name": "InvestmentPropertyFairValueModel",
+      "fact_value": 292872.0,
+      "instant_date": "2021-08-31"
+    },
+    {
+      "fact_name": "TradeDebtorsTradeReceivables",
+      "fact_value": 525.0,
+      "instant_date": "2022-08-31"
+    },
+    {
+      "fact_name": "TradeDebtorsTradeReceivables",
+      "fact_value": 748.0,
+      "instant_date": "2021-08-31"
+    },
+    {
+      "fact_name": "OtherDebtors",
+      "fact_value": 1139.0,
+      "instant_date": "2022-08-31"
+    },
+    {
+      "fact_name": "OtherDebtors",
+      "fact_value": 820.0,
+      "instant_date": "2021-08-31"
+    },
+    {
+      "fact_name": "Debtors",
+      "fact_value": 1664.0,
+      "instant_date": "2022-08-31"
+    },
+    {
+      "fact_name": "Debtors",
+      "fact_value": 1568.0,
+      "instant_date": "2021-08-31"
+    },
+    {
+      "fact_name": "OtherCreditors",
+      "fact_value": 55423.0,
+      "instant_date": "2022-08-31"
+    },
+    {
+      "fact_name": "OtherCreditors",
+      "fact_value": 232603.0,
+      "instant_date": "2021-08-31"
+    },
+    {
+      "fact_name": "BankBorrowingsOverdrafts",
+      "fact_value": 286468.0,
+      "instant_date": "2022-08-31"
+    },
+    {
+      "fact_name": "BankBorrowingsOverdrafts",
+      "fact_value": 280736.0,
+      "instant_date": "2021-08-31"
+    }
+  ],
+  "cfps_score": 7,
+  "qualitative_narrative": "!NSPIRED INVESTMENTS LTD exhibits increasing cash flow pressure. While debtor balances have remained relatively stable, the significant increase in creditors, coupled with a negative and worsening net current asset/liability position, suggests a growing reliance on short-term financing to fund operations, making them a potential candidate for invoice discounting.",
+  "final_qualification": "QUALIFIED"
+}

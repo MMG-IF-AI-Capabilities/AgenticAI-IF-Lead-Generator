@@ -50,7 +50,8 @@ if not df.empty:
             btn_key = f"resend_{i}"
             status_text = st.session_state["sent_status"].get(btn_key, "")
             with st.container():
-                if st.button("📩 Resend", key=btn_key):
+                is_disabled = (row["response"] != "No Response" and pd.notna(row["response"]))
+                if st.button("📩 Resend", key=btn_key, disabled=is_disabled):
                     try:
                         resp = requests.post(
                             f"{API_URL}/resend",
